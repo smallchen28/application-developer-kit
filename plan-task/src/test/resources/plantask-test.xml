@@ -1,0 +1,31 @@
+<tasks>
+    <!-- xxx -->
+    <task name="daily-endprocess-inter">
+        <task-type>cron</task-type>
+        <!-- task-type>interval</task-type -->
+        <task-expiration>-1</task-expiration>
+        <repat-flag>true</repat-flag>
+        <exec-max-count>600</exec-max-count>
+        <task-exp>* * * 1 10 *</task-exp>
+        <exec-context>{'id':'10','name':'dep-settle'}</exec-context>
+        <exec-memo>初创</exec-memo>
+        <crt-jobd>日中计划任务</crt-jobd>
+        <!-- 连续执行开关 -->
+        <exec-continuous>false</exec-continuous>
+
+        <!-- statement -->
+        <statements>
+            <statement task-state-name="DAILY_CUT_ACCTRANS_SERVICE"
+                       state-class-type="com.yiji.adk.plan.task.test.ActionStatement1" crt-jobd="账务日切"
+                       exec-priority="1"/>
+            <statement task-state-name="DAILY_FINAL_ACCTRANS_NOTIFER"
+                       state-class-type="com.yiji.adk.plan.task.test.ActionStatement2" crt-jobd="日终通知"
+                       exec-priority="2"/>
+            <statement task-state-name="DAILY_FINAL_ACCTRANS_QUERY"
+                       state-class-type="com.yiji.adk.plan.task.test.ActionStatement3" crt-jobd="日终账务轮询"
+                       exec-priority="3"/>
+        </statements>
+
+    </task>
+
+</tasks>

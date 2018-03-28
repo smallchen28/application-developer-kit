@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<flow xmlns="http://www.yiji.com/core/schema/flow_def"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="http://www.yiji.com/core/schema/flow_def
+                                http://www.yiji.com/core/schema/flow_def.xsd"
+               name="deposit_back"
+               version="1"
+        >
+
+    <monitor monitor_class="com.yiji.adk.flow.test.fastpay.FastPayExceptionMonitor">
+        <exception_mappings>
+            <exception_mapping exception_class="com.yiji.adk.common.exception.BizException"/>
+            <exception_mapping exception_class="java.lang.Throwable"/>
+        </exception_mappings>
+    </monitor>
+
+    <start name="Start">
+        <transition event="commit_depositback" to="DepositBack" description="进入退货流程"/>
+    </start>
+
+    <auto_task name="DepositBack" trigger_class="com.yiji.adk.flow.test.fastpay.DepositBack">
+        <transition event="biz_over" description="简单" to="Finished"/>
+    </auto_task>
+
+    <end name="Finished"/>
+
+</flow>

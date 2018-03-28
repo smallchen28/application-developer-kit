@@ -1,0 +1,16 @@
+<fileConfig bizType="gydRepayment" direction="assemble" tenant="gyd">
+
+    <!-- 系统配置 -->
+    <system extends="true" fileService="ftp">
+    </system>
+
+    <!-- 业务配置 -->
+    <business>
+        <file splitter="|" suffix=".txt" hasHeader="true" mode="detail" encoding="UTF-8">
+            <header>totalNum|totalAmount</header>
+            <keys>bizType|loanNo|repayAmount</keys>
+            <assembleLocalPath>~/appdata/filecenter/assemble/</assembleLocalPath>
+        </file>
+    </business>
+
+</fileConfig>

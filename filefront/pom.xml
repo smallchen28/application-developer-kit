@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>application-developer-kit</artifactId>
+        <groupId>com.yiji.adk</groupId>
+        <version>1.2.26-SNAPSHOT</version>
+    </parent>
+    <artifactId>filefront</artifactId>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>com.oracle</groupId>
+            <artifactId>ojdbc14</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.yiji.adk</groupId>
+            <artifactId>api</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.yiji.adk</groupId>
+            <artifactId>biz-executor</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.yiji.adk</groupId>
+            <artifactId>event</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.yiji.boot</groupId>
+            <artifactId>yiji-boot-starter-dubbo</artifactId>
+            <version>${yiji.boot.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.yiji.boot</groupId>
+            <artifactId>yiji-boot-starter-jdbc</artifactId>
+            <version>${yiji.boot.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.yiji.boot</groupId>
+            <artifactId>yiji-boot-starter-mybatis</artifactId>
+            <version>${yiji.boot.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.yiji.boot</groupId>
+            <artifactId>yiji-boot-starter-test</artifactId>
+            <version>${yiji.boot.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.yjf.scheduler</groupId>
+            <artifactId>scheduler-facade</artifactId>
+            <version>2.0.20160118</version>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-net</groupId>
+            <artifactId>commons-net</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>dom4j</groupId>
+            <artifactId>dom4j</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>jaxen</groupId>
+            <artifactId>jaxen</artifactId>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.7.2</version>
+                <configuration>
+                    <skipTests>true</skipTests>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

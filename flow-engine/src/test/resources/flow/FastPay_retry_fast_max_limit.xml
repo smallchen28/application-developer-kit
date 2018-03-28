@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<flow xmlns="http://www.yiji.com/core/schema/flow_def"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.yiji.com/core/schema/flow_def http://www.yiji.com/core/schema/flow_def.xsd"
+      name="fast_pay_retry_fail_fast_max_limit"
+      version="1"
+      log_name="TEST"
+        >
+    <monitor monitor_class="com.yiji.adk.flow.test.fastpay.FastPayExceptionMonitor">
+        <exception_mappings>
+            <exception_mapping exception_class="com.yiji.adk.common.exception.BizException"/>
+            <exception_mapping exception_class="java.lang.Throwable"/>
+        </exception_mappings>
+    </monitor>
+
+    <event_listeners>
+        <listener class="com.yiji.adk.flow.test.fastpay.listener.FastPayChangeStatusListener"
+                  description="全局状态变更监听器"/>
+        <listener class="com.yiji.adk.flow.test.fastpay.listener.FastPayLogListener"
+                  description="节点变化日志处理"/>
+    </event_listeners>
+
+    <start name="Start">
+        <transition event="start_processor" to="PreparedStatement" description="开始业务流程，进入支付流程预处理。"/>
+    </start>
+
+    <auto_task name="PreparedStatement"
+               trigger_class="com.yiji.adk.flow.test.fastpay.PreparedStatement">
+        <condition
+                mvel_script="com.yiji.adk.flow.test.fastpay.Customer customer = (com.yiji.adk.flow.test.fastpay.Customer)execution.getTarget(); com.yiji.adk.flow.test.fastpay.Consumer ctx = customer.getConsumer(); if( ctx.getPrice() &gt;= 100 ){return  &quot;wait_notify&quot;;}else{return  &quot;error&quot;;}">
+            <transition event="error" description="出现业务错误，进入业务出错节点" to="BizError"/>
+            <transition event="wait_notify" description="业务检查完毕，进入等待通知节点" to="WaitNotify"/>
+        </condition>
+    </auto_task>
+
+    <auto_task name="BizError" trigger_class="com.yiji.adk.flow.test.fastpay.BizError">
+        <condition>
+            <transition event="biz_over" description="构建完成错误结果结束流程" to="Finished"/>
+        </condition>
+    </auto_task>
+    <!-- 重试节点 -->
+    <!-- failFast  retryInfo=3-->
+    <!-- failBomb  retryInfo=-1 -->
+    <!-- failRetreat  retryInfo=3,2,hour,byDouble-->
+    <retry_task target="BizError" name="retryValidate" retryFail="failFast" retryInfo="2" retryMaxLimitNode="Finished"
+                trigger_class="com.yiji.adk.flow.test.fastpay.FastPayRetryTrigger"/>
+
+    <active_node trace_log="true" name="WaitNotify" trigger_class="com.yiji.adk.flow.test.fastpay.WaitNotify">
+        <condition>
+            <transition event="transfer_unknow" description="转账状态未知导致交易挂起" to="TransferRetry"/>
+            <transition event="transfer_success" description="转账成功进入交易成功节点" to="WaitTradeResultConfirm"/>
+            <transition event="transfer_fail" description="转账失败增加重试任务" to="TransferRetry"/>
+        </condition>
+    </active_node>
+
+
+    <active_node name="TransferRetry" trigger_class="com.yiji.adk.flow.test.fastpay.TransferRetry">
+        <transition event="wait_notify" description="创建完成重试任务回到WaitNotify" to="WaitNotify"/>
+    </active_node>
+
+    <active_node name="WaitTradeResultConfirm"
+                 trigger_class="com.yiji.adk.flow.test.fastpay.WaitTradeResultConfirm">
+        <condition>
+            <transition event="trade_certified_final" description="交易确认完成(交易超过最终退货时间)" to="CertifiedFinal"/>
+            <transition event="trade_refund" description="交易退款" to="Refund"/>
+        </condition>
+    </active_node>
+
+    <sub_flow name="Refund" sub_flow_name="deposit_back" version="1">
+        <condition mvel_script="return &quot;trade_finished&quot;; ">
+            <transition event="trade_finished" description="交易退货完成则最终完成" to="Finished"/>
+        </condition>
+    </sub_flow>
+
+    <auto_task name="CertifiedFinal" trigger_class="com.yiji.adk.flow.test.fastpay.CertifiedFinal">
+        <transition event="trade_finished" description="结束处理流程" to="Finished"/>
+    </auto_task>
+
+    <end name="Finished"/>
+
+</flow>

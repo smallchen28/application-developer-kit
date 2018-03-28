@@ -1,0 +1,24 @@
+<fileConfig bizType="repayment" notifyType="request">
+
+    <system>
+        <server fileService="ftp" extends="false">
+            <host>192.168.11.11</host>
+            <port>21</port>
+            <username>test</username>
+            <password>test</password>
+            <transport>
+                <ftp passive="true" charset="UTF-8" soTimeout="60000" recvBuffer="4096" sendBuffer="4096"
+                     soLinger="false" soLingerTime="-1" tcpNoDelay="false"/>
+            </transport>
+        </server>
+        <path>
+            <download isDownload="true">/home/karott/file/</download>
+            <upload isUpload="true">/filecenter/file/</upload>
+        </path>
+    </system>
+
+    <!-- 业务配置 -->
+    <business>
+    </business>
+
+</fileConfig>

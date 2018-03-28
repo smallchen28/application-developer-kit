@@ -1,0 +1,17 @@
+<fileConfig bizType="gydftp" direction="none" tenant="gyd">
+
+    <system fileService="ftp">
+        <server>
+            <transport>
+                <ftp passive="true" charset="UTF-8" soTimeout="60000" recvBuffer="4096" sendBuffer="4096"
+                     soLinger="false" soLingerTime="-1" tcpNoDelay="false"/>
+            </transport>
+        </server>
+
+        <path>
+            <download isDownload="true">～/appdata/ftp/download</download>
+            <upload isUpload="true">/test/upload</upload>
+        </path>
+    </system>
+
+</fileConfig>

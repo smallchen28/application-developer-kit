@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<flow xmlns="http://www.yiji.com/core/schema/flow_def"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="http://www.yiji.com/core/schema/flow_def
+                                http://www.yiji.com/core/schema/flow_def.xsd"
+               name="deposit"
+               version="1"
+        >
+
+    <monitor monitor_class="com.yiji.adk.flow.test.deposit.DepositExceptionMonitor">
+        <exception_mappings>
+            <exception_mapping exception_class="com.yiji.adk.common.exception.BizException"/>
+            <exception_mapping exception_class="java.lang.Throwable"/>
+        </exception_mappings>
+    </monitor>
+    <event_listeners>
+        <listener class="com.yiji.adk.flow.test.deposit.StatusOnChangeListener" description="状态变化监听器"/>
+    </event_listeners>
+
+    <start name="start">
+        <transition event="start_process" to="committedSettlement" description="提交清算"/>
+    </start>
+
+    <auto_task name="committedSettlement" trigger_class="com.yiji.adk.flow.test.deposit.CommittedSettlement">
+        <condition mvel_script="status = execution.?attachment.call-settlement-rs.?status.toString(); if(status == &quot;SUCCESS&quot;){return &quot;committed_settlement_success&quot;;} else if(status == &quot;FAIL&quot;){return &quot;committed_settlement_fail&quot;;} else{return &quot;committed_settlement_processing&quot;;}">
+            <transition event="committed_settlement_fail" description="调用清算返回失败" to="settlementFail"/>
+            <transition event="committed_settlement_success" description="调用清算返回成功" to="settlementSuccess"/>
+            <transition event="committed_settlement_processing" description="调用清算挂起(等待激活)" to="settlementSuspend"/>
+        </condition>
+    </auto_task>
+
+    <active_node name="settlementSuspend" trigger_class="com.yiji.adk.flow.test.deposit.SettlementSuspend" trace_log="true">
+        <transition event="retry_committed_settlement" description="重试调用清算" to="committedSettlement" />
+    </active_node>
+
+    <auto_task name="settlementFail" trigger_class="com.yiji.adk.flow.test.deposit.SettlementFail">
+        <transition event="biz_error" description="清算失败构建应答，返回结果" to="finished"/>
+    </auto_task>
+
+    <auto_task name="settlementSuccess" trigger_class="com.yiji.adk.flow.test.deposit.SettlementSuccess">
+        <transition event="committed_accounting"  description="" to="committedAccounting"/>
+    </auto_task>
+
+    <auto_task name="committedAccounting" trigger_class="com.yiji.adk.flow.test.deposit.CommittedAccounting">
+        <condition>
+            <transition event="build_result" description="处理成功构建应答" to="postProcess"/>
+            <transition event="account_error" description="账务失败或未知" to="accountUnkown"/>
+        </condition>
+    </auto_task>
+
+    <auto_task name="postProcess">
+        <transition event="biz_over" description="业务结束" to="finished"/>
+    </auto_task>
+
+    <active_node name="accountUnkown" trigger_class="">
+        <transition event="retry_committed_accounting" description="账务出错，等待激活重试" to="committedAccounting"/>
+    </active_node>
+
+    <end name="finished"/>
+
+</flow>

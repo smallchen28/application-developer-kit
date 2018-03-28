@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.yiji.com/core/schema/flow_def"
+        xmlns:tns="http://www.yiji.com/core/schema/flow_def"
+        elementFormDefault="qualified">
+
+    <element name="flow">
+        <annotation>
+            <documentation><![CDATA[流程定义配置,且本身可以充当子流程]]></documentation>
+        </annotation>
+
+        <complexType>
+            <sequence>
+                <element name="description" minOccurs="0" maxOccurs="1">
+                    <annotation>
+                        <documentation><![CDATA[流程描述]]]></documentation>
+                    </annotation>
+                </element>
+                <element ref="tns:monitor" minOccurs="0" maxOccurs="1"/>
+                <element ref="tns:event_listeners" minOccurs="0" maxOccurs="1"/>
+                <element ref="tns:start" minOccurs="1" maxOccurs="1"/>
+                <choice maxOccurs="unbounded" minOccurs="1">
+                    <element ref="tns:auto_task" minOccurs="0" maxOccurs="unbounded"/>
+                    <element ref="tns:active_node" minOccurs="0" maxOccurs="unbounded"/>
+                    <element ref="tns:retry_task" minOccurs="0" maxOccurs="unbounded"/>
+                    <element ref="tns:sub_flow" minOccurs="0" maxOccurs="unbounded"/>
+                </choice>
+                <element ref="tns:end" minOccurs="1" maxOccurs="1"/>
+            </sequence>
+
+            <attribute name="version" type="integer" use="required">
+                <annotation>
+                    <documentation>
+                        <![CDATA[流程版本处理过程中会按照对应版本调用处理器、触发器，未发现对应处理器时将抛出FlowException]]></documentation>
+                </annotation>
+            </attribute>
+
+            <attribute name="name" type="string" use="required">
+                <annotation>
+                    <documentation><![CDATA[状态机名称]]></documentation>
+                </annotation>
+            </attribute>
+
+            <attribute name="log_name" type="string" use="optional">
+                <annotation>
+                    <documentation><![CDATA[跟踪日志名称，默认为实现当前类路径]]></documentation>
+                </annotation>
+            </attribute>
+        </complexType>
+    </element>
+
+    <element name="monitor">
+        <annotation>
+            <documentation><![CDATA[异常处理策略]]]></documentation>
+        </annotation>
+        <complexType>
+            <sequence>
+                <element name="exception_mappings">
+                    <complexType>
+                        <sequence>
+                            <element name="exception_mapping" minOccurs="0" maxOccurs="unbounded">
+                                <complexType>
+                                    <attribute name="exception_class" use="required" type="string"/>
+                                </complexType>
+                            </element>
+                        </sequence>
+                    </complexType>
+                </element>
+            </sequence>
+
+            <attribute name="monitor_class" type="string" use="required">
+                <annotation>
+                    <documentation><![CDATA[流程监控器定义]]></documentation>
+                </annotation>
+            </attribute>
+        </complexType>
+    </element>
+
+    <element name="event_listeners">
+        <annotation>
+            <documentation><![CDATA[transition事件监听器群，事件发生为离开TO节点之后进入FROM节点之前,也就是在Transition中。]]]></documentation>
+        </annotation>
+        <complexType>
+            <sequence>
+                <element name="listener" minOccurs="1" maxOccurs="unbounded">
+                    <annotation>
+                        <documentation><![CDATA[注册监听器]]]></documentation>
+                    </annotation>
+                    <complexType>
+                        <attribute name="class" use="required" type="string"/>
+                        <attribute name="description" use="required" type="string"/>
+                    </complexType>
+                </element>
+            </sequence>
+        </complexType>
+    </element>
+
+    <complexType name="abstract_node" abstract="true">
+        <attributeGroup ref="tns:common_attribute"/>
+    </complexType>
+
+    <complexType name="abstract_task_node" abstract="true">
+        <complexContent>
+            <extension base="tns:abstract_node">
+                <sequence>
+                    <choice>
+                        <element ref="tns:transition" minOccurs="1" maxOccurs="1"/>
+                        <element ref="tns:condition" minOccurs="1" maxOccurs="1"/>
+                    </choice>
+                </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+
+    <complexType name="abstract_task_node_retry" abstract="true">
+        <complexContent>
+            <extension base="tns:abstract_node">
+            </extension>
+        </complexContent>
+    </complexType>
+
+
+    <attributeGroup name="common_attribute">
+        <attribute name="name" type="string" use="required">
+            <annotation>
+                <documentation><![CDATA[节点名称]]]></documentation>
+            </annotation>
+        </attribute>
+        <attribute name="trigger_class" type="string" use="optional">
+            <annotation>
+                <documentation>
+                    <![CDATA[节点触发器，其中包括节点前置触发器@Before、执行触发器@After、后置触发器@End、条件抉择器@Condition、错误触发器@Error]]></documentation>
+            </annotation>
+        </attribute>
+        <attribute name="trace_log" type="boolean" use="optional">
+            <annotation>
+                <documentation>
+                    <![CDATA[各节点执行结束是否打印跟踪日志]]></documentation>
+            </annotation>
+        </attribute>
+    </attributeGroup>
+
+    <element name="condition">
+        <annotation>
+            <documentation><![CDATA[条件决策]]></documentation>
+        </annotation>
+        <complexType>
+            <sequence>
+                <element ref="tns:transition" minOccurs="1" maxOccurs="unbounded"/>
+            </sequence>
+            <attribute name="mvel_script" type="string" use="optional">
+                <annotation>
+                    <documentation><![CDATA[基于mvel的条件表达式，用于决策激活事件，优先级为func返回值 > @Condition > mvel表达式]]></documentation>
+                </annotation>
+            </attribute>
+        </complexType>
+    </element>
+
+    <element name="transition">
+        <annotation>
+            <documentation><![CDATA[流转配置]]></documentation>
+        </annotation>
+        <complexType>
+            <attribute name="event" type="string" use="required">
+                <annotation>
+                    <documentation><![CDATA[流转事件]]]></documentation>
+                </annotation>
+            </attribute>
+            <attribute name="description" type="string" use="required">
+                <annotation>
+                    <documentation><![CDATA[流转描述]]]></documentation>
+                </annotation>
+            </attribute>
+            <attribute name="to" type="string" use="required">
+                <annotation>
+                    <documentation><![CDATA[流转节点]]></documentation>
+                </annotation>
+            </attribute>
+        </complexType>
+    </element>
+
+    <element name="start">
+        <annotation>
+            <documentation><![CDATA[开始节点定义配置，原则上开始节点不做任何处理，仅仅是对开始的定义。]]></documentation>
+        </annotation>
+        <complexType>
+            <complexContent>
+                <extension base="tns:abstract_node">
+                    <sequence>
+                        <choice>
+                            <element ref="tns:transition" minOccurs="1" maxOccurs="unbounded"/>
+                            <element ref="tns:condition" minOccurs="1" maxOccurs="1"/>
+                        </choice>
+                    </sequence>
+                </extension>
+            </complexContent>
+        </complexType>
+    </element>
+
+    <element name="end">
+        <annotation>
+            <documentation><![CDATA[结束节点定义配置，原则上开始节点不做任何处理，仅仅是对结束的定义。]]></documentation>
+        </annotation>
+        <complexType>
+            <complexContent>
+                <extension base="tns:abstract_node"/>
+            </complexContent>
+        </complexType>
+    </element>
+
+    <element name="auto_task">
+        <annotation>
+            <documentation><![CDATA[自动任务执行节点，流入此节点时自动启动其生命周期。]]></documentation>
+        </annotation>
+        <complexType>
+            <complexContent>
+                <extension base="tns:abstract_task_node"/>
+            </complexContent>
+        </complexType>
+    </element>
+
+    <element name="active_node">
+        <annotation>
+            <documentation><![CDATA[激活节点，流入此节点之后流程中终止，不再主动执行，需要外部进行激活。]]></documentation>
+        </annotation>
+        <complexType>
+            <complexContent>
+                <extension base="tns:abstract_task_node"/>
+            </complexContent>
+        </complexType>
+    </element>
+
+    <element name="retry_task">
+        <annotation>
+            <documentation><![CDATA[重试节点，流入此节点之后根据重试类型，做重试操作。]]></documentation>
+        </annotation>
+        <complexType>
+            <complexContent>
+                <extension base="tns:abstract_task_node_retry">
+                    <attribute name="target" type="string" use="required"/>
+                    <attribute name="retryFail" use="required">
+                        <simpleType>
+                            <restriction base="string">
+                                <enumeration value="failRetreat">
+                                    <annotation>
+                                        <documentation><![CDATA[失败后退避调度。]]></documentation>
+                                    </annotation>
+                                </enumeration>
+                                <enumeration value="failFast">
+                                    <annotation>
+                                        <documentation><![CDATA[失败后立即。]]></documentation>
+                                    </annotation>
+                                </enumeration>
+                                <enumeration value="failBomb">
+                                    <annotation>
+                                        <documentation><![CDATA[重试到爆。]]></documentation>
+                                    </annotation>
+                                </enumeration>
+                            </restriction>
+                        </simpleType>
+                    </attribute>
+                    <attribute name="retryInfo" type="string" use="required"/>
+                    <attribute name="retryMaxLimitNode" type="string" use="optional"/>
+                </extension>
+            </complexContent>
+        </complexType>
+    </element>
+
+    <element name="sub_flow">
+        <annotation>
+            <documentation><![CDATA[子流程定义配置]]></documentation>
+        </annotation>
+        <complexType>
+            <sequence>
+                <choice>
+                    <element ref="tns:transition" minOccurs="1" maxOccurs="unbounded"/>
+                    <element ref="tns:condition" minOccurs="1" maxOccurs="1"/>
+                </choice>
+            </sequence>
+            <attribute name="name" type="string" use="required">
+                <annotation>
+                    <documentation><![CDATA[节点名称用于流转时指定]]]></documentation>
+                </annotation>
+            </attribute>
+            <attribute name="sub_flow_name" type="string" use="required">
+                <annotation>
+                    <documentation><![CDATA[子流程引用名称]]]></documentation>
+                </annotation>
+            </attribute>
+            <attribute name="version" type="integer" use="required">
+                <annotation>
+                    <documentation><![CDATA[状态机引用版本]]]></documentation>
+                </annotation>
+            </attribute>
+        </complexType>
+    </element>
+
+</schema>
