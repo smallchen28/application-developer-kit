@@ -133,7 +133,7 @@ public class DomainFactory implements ApplicationContextAware {
 		String refreshScript = null;
 		try {
 			//- 构建javassist
-			CtClass ctClass = com.yiji.adk.common.compiler.Compiler.getInstance().newCtClass(DomainObjectCreator.class);
+			CtClass ctClass = com.global.adk.common.compiler.Compiler.getInstance().newCtClass(DomainObjectCreator.class);
 			
 			String className = ctClass.getSimpleName();
 			String targetClassName = domainObjectType.getName();
@@ -172,23 +172,23 @@ public class DomainFactory implements ApplicationContextAware {
 		
 		StringBuilder refreshScript = new StringBuilder();
 		refreshScript
-			.append("public void refresh(com.yiji.adk.active.record.module.DomainObject domainObject){\n")
+			.append("public void refresh(com.global.adk.active.record.module.DomainObject domainObject){\n")
 			.append("\t")
 			.append("domainObject.setSqlSessionTemplate(this.sqlSessionTemplate);\n")
 			.append("\t")
 			.append("domainObject.setDomainFactory(this.domainFactory);\n")
 			.append("\t")
-			.append("if(domainObject instanceof com.yiji.adk.active.record.module.AbstractDomain){\n\t\t")
-			.append("((com.yiji.adk.active.record.module.AbstractDomain)domainObject).setNotifierBus(notifierBus);\n\t")
+			.append("if(domainObject instanceof com.global.adk.active.record.module.AbstractDomain){\n\t\t")
+			.append("((com.global.adk.active.record.module.AbstractDomain)domainObject).setNotifierBus(notifierBus);\n\t")
 			.append("}\n\t")
-			.append("if(domainObject instanceof com.yiji.adk.active.record.module.EntityObject){\n\t\t")
+			.append("if(domainObject instanceof com.global.adk.active.record.module.EntityObject){\n\t\t")
 			.append(
-				"((com.yiji.adk.active.record.module.EntityObject)domainObject).setInternalSeqCreator(internalSeqCreator);\n\t")
+				"((com.global.adk.active.record.module.EntityObject)domainObject).setInternalSeqCreator(internalSeqCreator);\n\t")
 			.append("}\n\t")
-			.append("if(domainObject instanceof com.yiji.adk.active.record.module.DomainObjectValidator){\n")
+			.append("if(domainObject instanceof com.global.adk.active.record.module.DomainObjectValidator){\n")
 			.append("\t\t")
 			.append(
-				"((com.yiji.adk.active.record.module.DomainObjectValidator)domainObject).setValidatorSupport(this.validatorSupport);")
+				"((com.global.adk.active.record.module.DomainObjectValidator)domainObject).setValidatorSupport(this.validatorSupport);")
 			.append("\n\t}").append("\n}");
 		
 		return refreshScript.toString();
@@ -198,7 +198,7 @@ public class DomainFactory implements ApplicationContextAware {
 		
 		StringBuilder createScript = new StringBuilder();
 		createScript
-			.append("public com.yiji.adk.active.record.module.DomainObject create(){\n")
+			.append("public com.global.adk.active.record.module.DomainObject create(){\n")
 			.append("\t")
 			.append(targetClassName)
 			.append(" domainObject = new ")
@@ -209,17 +209,17 @@ public class DomainFactory implements ApplicationContextAware {
 			.append("\t")
 			.append("domainObject.setDomainFactory(this.domainFactory);\n")
 			.append("\t")
-			.append("if(domainObject instanceof com.yiji.adk.active.record.module.AbstractDomain){\n\t\t")
-			.append("((com.yiji.adk.active.record.module.AbstractDomain)domainObject).setNotifierBus(notifierBus);\n\t")
+			.append("if(domainObject instanceof com.global.adk.active.record.module.AbstractDomain){\n\t\t")
+			.append("((com.global.adk.active.record.module.AbstractDomain)domainObject).setNotifierBus(notifierBus);\n\t")
 			.append("}\n\t")
-			.append("if(domainObject instanceof com.yiji.adk.active.record.module.EntityObject){\n\t\t")
+			.append("if(domainObject instanceof com.global.adk.active.record.module.EntityObject){\n\t\t")
 			.append(
-				"((com.yiji.adk.active.record.module.EntityObject)domainObject).setInternalSeqCreator(internalSeqCreator);\n\t")
+				"((com.global.adk.active.record.module.EntityObject)domainObject).setInternalSeqCreator(internalSeqCreator);\n\t")
 			.append("}\n\t")
-			.append("if(domainObject instanceof com.yiji.adk.active.record.module.DomainObjectValidator){\n")
+			.append("if(domainObject instanceof com.global.adk.active.record.module.DomainObjectValidator){\n")
 			.append("\t\t")
 			.append(
-				"((com.yiji.adk.active.record.module.DomainObjectValidator)domainObject).setValidatorSupport(this.validatorSupport);")
+				"((com.global.adk.active.record.module.DomainObjectValidator)domainObject).setValidatorSupport(this.validatorSupport);")
 			.append("\n\t}").append("\treturn domainObject;\n").append("\n}");
 		
 		return createScript.toString();
@@ -232,18 +232,18 @@ public class DomainFactory implements ApplicationContextAware {
 			.append("public ")
 			.append(className)
 			.append("(\n\t")
-			.append("com.yiji.adk.active.record.DomainFactory domainFactory,\n\t")
-			.append("com.yiji.adk.active.record.ValidatorSupport validatorSupport,\n\t")
+			.append("com.global.adk.active.record.DomainFactory domainFactory,\n\t")
+			.append("com.global.adk.active.record.ValidatorSupport validatorSupport,\n\t")
 			.append("org.mybatis.spring.SqlSessionTemplate sqlSessionTemplate, \n\t")
 			.append("Class domainObjectType, \n\t")
-			.append("com.yiji.adk.active.record.InternalSeqCreator internalSeqCreator,\n\t")
-			.append("com.yiji.adk.event.NotifierBus notifierBus\n")
+			.append("com.global.adk.active.record.InternalSeqCreator internalSeqCreator,\n\t")
+			.append("com.global.adk.event.NotifierBus notifierBus\n")
 			.append(") {\n\t")
 			.append(
 				"super(domainFactory,validatorSupport, sqlSessionTemplate, domainObjectType, internalSeqCreator,notifierBus);\n")
 			.append("}");
 		
-		return constructorScript.toString();
+		return constructorScript.toString(); 
 	}
 	
 	public ValidatorSupport getValidatorSupport() {

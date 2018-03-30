@@ -88,7 +88,7 @@ public abstract class SubscriberWrapper implements Comparable<SubscriberWrapper>
 					methodDefinition.toString());
 			}
 			
-			CtClass ctClass = com.yiji.adk.common.compiler.Compiler.getInstance().newCtClass(SubscriberWrapper.class);
+			CtClass ctClass = com.global.adk.common.compiler.Compiler.getInstance().newCtClass(SubscriberWrapper.class);
 			return Compiler.getInstance().methodWeave(ctClass, SubscriberWrapper.class, methodDefinition.toString())
 				.newInstance(ctClass, null, null);
 			

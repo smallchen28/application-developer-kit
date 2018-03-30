@@ -1,5 +1,5 @@
 /**
- * www.yiji.com Inc.
+ * www.global.com Inc.
  * Copyright (c) 2011 All Rights Reserved.
  */
 package com.global.adk.flow.delegate;
@@ -179,7 +179,7 @@ public class ListenerDelegateContext implements ListenerDelegate {
 		
 		valid(key, listenerBean, method, parameterTypes, returnType);
 		
-		com.yiji.adk.common.compiler.Compiler compiler = Compiler.getInstance();
+		com.global.adk.common.compiler.Compiler compiler = Compiler.getInstance();
 		CtClass ctClass = compiler.newCtClass(AbstractListenerDelegate.class);
 		
 		StringBuilder constructScript = new StringBuilder();
@@ -189,7 +189,7 @@ public class ListenerDelegateContext implements ListenerDelegate {
 		StringBuilder actionScript = new StringBuilder();
 
 		actionScript
-			.append("public void action(com.yiji.adk.flow.engine.Execution execution , String eventName){\n\t")
+			.append("public void action(com.global.adk.flow.engine.Execution execution , String eventName){\n\t")
 				.append("((").append(listenerBean.getClass().getName()).append(")getTarget()).").append(method.getName())
 			.append("(execution,eventName);\n}\n");
 		

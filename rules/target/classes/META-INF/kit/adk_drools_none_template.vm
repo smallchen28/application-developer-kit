@@ -1,0 +1,13 @@
+package com.yiji.adk.rules.drools.none.drl.template
+
+
+import com.yiji.adk.rules.drools.DroolsExecuteContext;
+import org.slf4j.Logger;
+
+rule "com.yiji.adk.rules.drools.none.drl.template.rule"
+when
+    $executeContext : DroolsExecuteContext()
+    eval(true)
+then
+    $executeContext.log().warn("{} no statistic rules ...",$executeContext.getRequest().toString());
+end

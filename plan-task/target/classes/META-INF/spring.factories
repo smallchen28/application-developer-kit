@@ -1,0 +1,3 @@
+##初始化
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.global.adk.plan.task.boot.PlanTaskConfiguration

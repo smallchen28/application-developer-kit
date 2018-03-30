@@ -1,5 +1,5 @@
 /**
- * www.yiji.com Inc.
+ * www.com Inc.
  * Copyright (c) 2011 All Rights Reserved.
  */
 package com.global.adk.biz.executor;
@@ -48,7 +48,7 @@ public class InvokeElementFactory {
 		
 		Logger logger = TraceLogFactory.getLogger(logName);
 		
-		Compiler compiler = com.yiji.adk.common.compiler.Compiler.getInstance();
+		Compiler compiler = com.global.adk.common.compiler.Compiler.getInstance();
 		
 		CtClass ctClass = compiler.newCtClass(InvokeElement.class);
 		
@@ -81,7 +81,7 @@ public class InvokeElementFactory {
 			.append("public ")
 			.append(constructName)
 			.append(
-				"(String serviceName,Class[] validateGroups, String logName, com.yiji.adk.biz.executor.InvokeService invokeService, Class entityClass, String resultClass, boolean isAsync,  com.yiji.adk.biz.executor.annotation.Invoke.SerialLock serialLock,com.yiji.adk.biz.executor.annotation.Invoke.TransactionAttribute transactionAttribute,boolean isEntityInjectSpringBeans) {\n\t")
+				"(String serviceName,Class[] validateGroups, String logName, com.global.adk.biz.executor.InvokeService invokeService, Class entityClass, String resultClass, boolean isAsync,  com.global.adk.biz.executor.annotation.Invoke.SerialLock serialLock,com.global.adk.biz.executor.annotation.Invoke.TransactionAttribute transactionAttribute,boolean isEntityInjectSpringBeans) {\n\t")
 			.append(
 				"super(serviceName,validateGroups,logName,invokeService,entityClass,resultClass,isAsync,serialLock,transactionAttribute,isEntityInjectSpringBeans);\n\t")
 			.append("}");
@@ -91,7 +91,7 @@ public class InvokeElementFactory {
 	private String generateNewEntityObject(Class entityClass, String serviceName) {
 		
 		StringBuilder src = new StringBuilder();
-		src.append("public  com.yiji.adk.active.record.module.EntityObject newEntityObject(){\n\t").append("return ");
+		src.append("public  com.global.adk.active.record.module.EntityObject newEntityObject(){\n\t").append("return ");
 		if (entityClass == null || entityClass.equals("")) {
 			src.append("null;\n}");
 		} else {

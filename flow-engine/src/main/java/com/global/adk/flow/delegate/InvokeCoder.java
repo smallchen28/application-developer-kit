@@ -1,5 +1,5 @@
 /**
- * www.yiji.com Inc.
+ * www.global.com Inc.
  * Copyright (c) 2011 All Rights Reserved.
  */
 package com.global.adk.flow.delegate;
@@ -196,7 +196,7 @@ public enum InvokeCoder {
 	//动态生存InvokeDelegate
 	InvokeDelegate createInvokeDelegate(Method method, Object targetInstance, Class<?>[] parameterTypes) {
 		
-		com.yiji.adk.common.compiler.Compiler compiler = Compiler.getInstance();
+		com.global.adk.common.compiler.Compiler compiler = Compiler.getInstance();
 		CtClass ctClass = compiler.newCtClass(AbstractInvokeDelegate.class);
 		
 		StringBuilder constructScript = new StringBuilder();

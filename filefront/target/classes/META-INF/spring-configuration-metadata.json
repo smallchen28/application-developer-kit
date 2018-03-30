@@ -1,0 +1,144 @@
+{
+  "groups": [
+    {
+      "name": "yiji.adk.filefront",
+      "type": "com.global.adk.filefront.boot.FilefrontProperties",
+      "sourceType": "com.global.adk.filefront.boot.FilefrontProperties"
+    },
+    {
+      "name": "yiji.adk.filefront.ftp",
+      "type": "com.global.adk.filefront.boot.FilefrontProperties$Ftp",
+      "sourceType": "com.global.adk.filefront.boot.FilefrontProperties",
+      "sourceMethod": "getFtp()"
+    },
+    {
+      "name": "yiji.adk.filefront.ftp-read",
+      "type": "com.global.adk.filefront.boot.FilefrontProperties$Ftp",
+      "sourceType": "com.global.adk.filefront.boot.FilefrontProperties",
+      "sourceMethod": "getFtpRead()"
+    }
+  ],
+  "properties": [
+    {
+      "name": "yiji.adk.filefront.capacity",
+      "type": "java.lang.Integer",
+      "description": "队列数量",
+      "sourceType": "com.global.adk.filefront.boot.FilefrontProperties",
+      "defaultValue": 10
+    },
+    {
+      "name": "yiji.adk.filefront.configLocation",
+      "type": "java.lang.String",
+      "description": "文件配置路径",
+      "sourceType": "com.global.adk.filefront.boot.FilefrontProperties",
+      "defaultValue": "classpath*:/file/config/**/*.xml"
+    },
+    {
+      "name": "yiji.adk.filefront.coreThreads",
+      "type": "java.lang.Integer",
+      "description": "文件处理线程数",
+      "sourceType": "com.global.adk.filefront.boot.FilefrontProperties",
+      "defaultValue": 16
+    },
+    {
+      "name": "yiji.adk.filefront.dialect",
+      "type": "java.lang.String",
+      "description": "数据库类型,必须;oracle,mysql",
+      "sourceType": "com.global.adk.filefront.boot.FilefrontProperties"
+    },
+    {
+      "name": "yiji.adk.filefront.dubboGroup",
+      "type": "java.lang.String",
+      "description": "dubbo分组,不配置默认获取applicationName",
+      "sourceType": "com.global.adk.filefront.boot.FilefrontProperties"
+    },
+    {
+      "name": "yiji.adk.filefront.dubboVersion",
+      "type": "java.lang.String",
+      "description": "dubbo版本,不配置默认是1.0",
+      "sourceType": "com.global.adk.filefront.boot.FilefrontProperties",
+      "defaultValue": "1.0"
+    },
+    {
+      "name": "yiji.adk.filefront.enable",
+      "type": "java.lang.Boolean",
+      "description": "是否启用此组件.默认不启用",
+      "sourceType": "com.global.adk.filefront.boot.FilefrontProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "yiji.adk.filefront.enableProvider",
+      "type": "java.lang.Boolean",
+      "description": "是否启用provider服务",
+      "sourceType": "com.global.adk.filefront.boot.FilefrontProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "yiji.adk.filefront.ftp-read.hosts",
+      "type": "java.lang.String",
+      "sourceType": "com.global.adk.filefront.boot.FilefrontProperties$Ftp"
+    },
+    {
+      "name": "yiji.adk.filefront.ftp-read.passwords",
+      "type": "java.lang.String",
+      "sourceType": "com.global.adk.filefront.boot.FilefrontProperties$Ftp"
+    },
+    {
+      "name": "yiji.adk.filefront.ftp-read.ports",
+      "type": "java.lang.String",
+      "sourceType": "com.global.adk.filefront.boot.FilefrontProperties$Ftp"
+    },
+    {
+      "name": "yiji.adk.filefront.ftp-read.server",
+      "type": "java.lang.String",
+      "description": "server配置代替hosts,ports,users,passwords",
+      "sourceType": "com.global.adk.filefront.boot.FilefrontProperties$Ftp"
+    },
+    {
+      "name": "yiji.adk.filefront.ftp-read.users",
+      "type": "java.lang.String",
+      "sourceType": "com.global.adk.filefront.boot.FilefrontProperties$Ftp"
+    },
+    {
+      "name": "yiji.adk.filefront.ftp.hosts",
+      "type": "java.lang.String",
+      "sourceType": "com.global.adk.filefront.boot.FilefrontProperties$Ftp"
+    },
+    {
+      "name": "yiji.adk.filefront.ftp.passwords",
+      "type": "java.lang.String",
+      "sourceType": "com.global.adk.filefront.boot.FilefrontProperties$Ftp"
+    },
+    {
+      "name": "yiji.adk.filefront.ftp.ports",
+      "type": "java.lang.String",
+      "sourceType": "com.global.adk.filefront.boot.FilefrontProperties$Ftp"
+    },
+    {
+      "name": "yiji.adk.filefront.ftp.server",
+      "type": "java.lang.String",
+      "description": "server配置代替hosts,ports,users,passwords",
+      "sourceType": "com.global.adk.filefront.boot.FilefrontProperties$Ftp"
+    },
+    {
+      "name": "yiji.adk.filefront.ftp.users",
+      "type": "java.lang.String",
+      "sourceType": "com.global.adk.filefront.boot.FilefrontProperties$Ftp"
+    },
+    {
+      "name": "yiji.adk.filefront.keepAliveTime",
+      "type": "java.lang.Integer",
+      "description": "存活时间,秒",
+      "sourceType": "com.global.adk.filefront.boot.FilefrontProperties",
+      "defaultValue": 240
+    },
+    {
+      "name": "yiji.adk.filefront.maxThreads",
+      "type": "java.lang.Integer",
+      "description": "最大线程数",
+      "sourceType": "com.global.adk.filefront.boot.FilefrontProperties",
+      "defaultValue": 50
+    }
+  ],
+  "hints": []
+}

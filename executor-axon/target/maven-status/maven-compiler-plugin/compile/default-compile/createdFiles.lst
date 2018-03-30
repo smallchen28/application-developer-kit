@@ -1,0 +1,11 @@
+com\global\adk\executor\axon\eventcommand\BusHolder.class
+com\global\adk\executor\axon\ExecutorAxonAutoConguration.class
+com\global\adk\executor\axon\factory\AbstractAggregateDBLockFactory.class
+com\global\adk\executor\axon\repository\AbstractAggregateRepository$1.class
+com\global\adk\executor\axon\transx\TransactionWrapper.class
+com\global\adk\executor\axon\ExecutorAxonProperties.class
+com\global\adk\executor\axon\repository\AbstractAggregateRepository.class
+com\global\adk\executor\axon\factory\AbstractAggregateDBLockFactory$DefaultAggregateLock.class
+com\global\adk\executor\axon\container\AbstractCommandInvoke.class
+META-INF\spring-configuration-metadata.json
+com\global\adk\executor\axon\aggregate\BizIdDefinition.class

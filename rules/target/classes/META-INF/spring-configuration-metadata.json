@@ -1,0 +1,57 @@
+{
+  "groups": [{
+    "name": "yiji.adk.rule",
+    "type": "com.global.adk.rules.drools.boot.RulesProperties",
+    "sourceType": "com.global.adk.rules.drools.boot.RulesProperties"
+  }],
+  "properties": [
+    {
+      "name": "yiji.adk.rule.actionDelay",
+      "type": "java.lang.Long",
+      "description": "异步延迟执行(默认：3000毫秒)",
+      "sourceType": "com.global.adk.rules.drools.boot.RulesProperties",
+      "defaultValue": 0
+    },
+    {
+      "name": "yiji.adk.rule.enable",
+      "type": "java.lang.Boolean",
+      "description": "是否启用此组件(默认:false)",
+      "sourceType": "com.global.adk.rules.drools.boot.RulesProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "yiji.adk.rule.partitionSize",
+      "type": "java.lang.Integer",
+      "description": "对应每个事件的KnowledgeBase对象池分区大小",
+      "sourceType": "com.global.adk.rules.drools.boot.RulesProperties",
+      "defaultValue": 25
+    },
+    {
+      "name": "yiji.adk.rule.ruleProps",
+      "type": "org.springframework.core.io.ClassPathResource",
+      "description": "KownledgeBaseConfiguration（drools配置）",
+      "sourceType": "com.global.adk.rules.drools.boot.RulesProperties"
+    },
+    {
+      "name": "yiji.adk.rule.ruleSeqName",
+      "type": "java.lang.String",
+      "description": "规则需要序列号配置(默认：seq_app_kit_rule)",
+      "sourceType": "com.global.adk.rules.drools.boot.RulesProperties",
+      "defaultValue": "seq_app_kit_rule"
+    },
+    {
+      "name": "yiji.adk.rule.tableNamePre",
+      "type": "java.lang.String",
+      "description": "规则表前缀(默认：app_kit_)",
+      "sourceType": "com.global.adk.rules.drools.boot.RulesProperties",
+      "defaultValue": "app_kit_"
+    },
+    {
+      "name": "yiji.adk.rule.velocityProps",
+      "type": "org.springframework.core.io.ClassPathResource",
+      "description": "Velocity配置",
+      "sourceType": "com.global.adk.rules.drools.boot.RulesProperties"
+    }
+  ],
+  "hints": []
+}

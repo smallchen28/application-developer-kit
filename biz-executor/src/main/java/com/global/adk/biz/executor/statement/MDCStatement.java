@@ -8,7 +8,7 @@
  * chenlin@yiji.com 2016-11-01 15:55 创建
  *
  */
-package com.yiji.adk.biz.executor.statement;
+package com.global.adk.biz.executor.statement;
 
 import com.global.adk.biz.executor.event.ServiceApplyEvent;
 import com.global.adk.biz.executor.event.ServiceFinishEvent;

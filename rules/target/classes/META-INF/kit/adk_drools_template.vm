@@ -1,0 +1,50 @@
+package  com.yiji.adk.rules.drools.$moduleView.getRuleEvent().toDRLPackage();
+
+import com.yiji.adk.rules.drools.DroolsExecuteContext;
+import com.yiji.adk.rules.drools.CompilerDynamicExecutor;
+import com.yiji.adk.rules.drools.GroovyDynamicExecutor;
+import com.yiji.adk.rules.drools.CurrentRelatedRuleInfo;
+import com.yiji.adk.rules.drools.CurrentRuleInfoHolder;
+
+#foreach($import in $moduleView.getImports())
+import $import ;
+#end
+
+#foreach($global in $moduleView.getGlobals())
+global $global ;
+#end
+#foreach($mapper in $moduleView.getExecutorMapper().entrySet())
+global $mapper.getValue().getClass().getName() $mapper.getKey() ;
+#end
+
+#foreach($rule in $moduleView.getRules())
+
+rule "$rule.getRuleName()_$timeStamp"
+salience $rule.getSalicence()
+    #if($rule.getEffectiveTime())
+    date-effective "$rule.getFormatEffectiveTime()"
+    #end
+    #if($rule.getExpireTime())
+    date-expires "$rule.getFormatExpireTime()"
+    #end
+    #if($rule.isAsync())
+    duration $moduleView.getDelay()
+    #end
+no-loop    $rule.isLoop()
+enabled $rule.isEnable()
+
+when
+    $executeContext : DroolsExecuteContext()
+    #foreach($condition in $rule.getConditions())
+        $condition.toData()
+    #end
+then
+    try{
+        CurrentRelatedRuleInfo  currentRelatedRuleInfo = new CurrentRelatedRuleInfo("$rule.getPolicyIdentity()","$rule.getIdentity()","$rule.getRuleName()","$rule.getDescription()","$rule.relateContextToJson()");
+        CurrentRuleInfoHolder.set(currentRelatedRuleInfo);
+        $rule.getScript()
+    }finally{
+        CurrentRuleInfoHolder.clear();
+    }
+end
+#end

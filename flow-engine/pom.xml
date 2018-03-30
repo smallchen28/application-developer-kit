@@ -65,14 +65,14 @@
             <scope>provided</scope>
         </dependency>
         
-        <!--  
+        
         <dependency>
             <groupId>com.yjf.scheduler</groupId>
             <artifactId>scheduler-facade</artifactId>
             <version>2.0.20160118</version>
             <scope>provided</scope>
         </dependency>
-		-->
+		
         <dependency>
             <groupId>org.mvel</groupId>
             <artifactId>mvel2</artifactId>
