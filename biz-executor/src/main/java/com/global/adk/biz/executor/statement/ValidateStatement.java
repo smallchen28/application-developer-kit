@@ -2,16 +2,16 @@
  * www.yiji.com Inc.
  * Copyright (c) 2011 All Rights Reserved.
  */
-package com.yiji.adk.biz.executor.statement;
+package com.global.adk.biz.executor.statement;
 
-import com.yiji.adk.biz.executor.event.InitEvent;
-import com.yiji.adk.biz.executor.event.ServiceApplyEvent;
-import com.yiji.adk.common.Constants;
-import com.yiji.adk.common.exception.BizException;
-import com.yiji.adk.common.exception.IllegalParameterException;
-import com.yiji.adk.common.exception.NestError;
-import com.yiji.adk.common.exception.SystemException;
-import com.yiji.adk.event.Subscribe;
+import com.global.adk.biz.executor.event.InitEvent;
+import com.global.adk.biz.executor.event.ServiceApplyEvent;
+import com.global.adk.common.Constants;
+import com.global.adk.common.exception.BizException;
+import com.global.adk.common.exception.IllegalParameterException;
+import com.global.adk.common.exception.NestError;
+import com.global.adk.common.exception.SystemException;
+import com.global.adk.event.Subscribe;
 import com.yjf.common.service.Validatable;
 
 import java.lang.reflect.ParameterizedType;

@@ -2,14 +2,14 @@
  * www.yiji.com Inc.
  * Copyright (c) 2011 All Rights Reserved.
  */
-package com.yiji.adk.biz.executor.proxy;
+package com.global.adk.biz.executor.proxy;
 
-import com.yiji.adk.biz.executor.InvokeElement;
-import com.yiji.adk.biz.executor.annotation.Invoke;
-import com.yiji.adk.common.exception.NestError;
-import com.yiji.adk.common.exception.SuspendException;
-import com.yiji.adk.common.exception.SystemException;
-import com.yiji.adk.common.log.TraceLogFactory;
+import com.global.adk.biz.executor.InvokeElement;
+import com.global.adk.biz.executor.annotation.Invoke;
+import com.global.adk.common.exception.NestError;
+import com.global.adk.common.exception.SuspendException;
+import com.global.adk.common.exception.SystemException;
+import com.global.adk.common.log.TraceLogFactory;
 import com.yjf.common.log.Logger;
 import org.aopalliance.intercept.MethodInvocation;
 import org.springframework.transaction.PlatformTransactionManager;

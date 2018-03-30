@@ -8,7 +8,7 @@
  * @author karott (e-mail:chenlin@yiji.com) 2017-04-19 14:53 创建
  *
  */
-package com.yiji.adk.biz.executor.support;
+package com.global.adk.biz.executor.support;
 
 import com.yjf.common.log.Logger;
 import com.yjf.common.log.LoggerFactory;

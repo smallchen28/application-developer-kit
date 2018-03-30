@@ -2,9 +2,9 @@
  * www.yiji.com Inc.
  * Copyright (c) 2011 All Rights Reserved.
  */
-package com.yiji.adk.biz.executor;
+package com.global.adk.biz.executor;
 
-import com.yiji.adk.common.exception.InitializerException;
+import com.global.adk.common.exception.InitializerException;
 import com.yjf.common.lang.result.StandardResultInfo;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.context.ApplicationContext;

@@ -1,14 +1,14 @@
-package com.yiji.adk.biz.executor.proxy;
+package com.global.adk.biz.executor.proxy;
 
 import java.util.concurrent.Executor;
 
 import org.aopalliance.intercept.MethodInvocation;
 import org.slf4j.Logger;
 
-import com.yiji.adk.biz.executor.InvokeElement;
-import com.yiji.adk.common.exception.KitNestException;
-import com.yiji.adk.common.exception.SystemException;
-import com.yiji.adk.common.log.TraceLogFactory;
+import com.global.adk.biz.executor.InvokeElement;
+import com.global.adk.common.exception.KitNestException;
+import com.global.adk.common.exception.SystemException;
+import com.global.adk.common.log.TraceLogFactory;
 
 /**
  * 异步代理过滤器

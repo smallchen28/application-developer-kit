@@ -2,14 +2,14 @@
  * www.yiji.com Inc.
  * Copyright (c) 2011 All Rights Reserved.
  */
-package com.yiji.adk.biz.executor.proxy;
+package com.global.adk.biz.executor.proxy;
 
 import com.google.common.collect.Sets;
-import com.yiji.adk.active.record.module.DBPlugin;
-import com.yiji.adk.biz.executor.InvokeElement;
-import com.yiji.adk.biz.executor.InvokeService;
-import com.yiji.adk.common.exception.InitializerException;
-import com.yiji.adk.common.exception.KitNestException;
+import com.global.adk.active.record.module.DBPlugin;
+import com.global.adk.biz.executor.InvokeElement;
+import com.global.adk.biz.executor.InvokeService;
+import com.global.adk.common.exception.InitializerException;
+import com.global.adk.common.exception.KitNestException;
 import org.aopalliance.intercept.MethodInterceptor;
 import org.aopalliance.intercept.MethodInvocation;
 import org.springframework.aop.framework.ProxyFactory;

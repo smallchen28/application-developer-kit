@@ -23,9 +23,9 @@
  *           佛祖保佑       永无BUG
  */
 
-package com.yiji.adk.biz.executor.boot;
+package com.global.adk.biz.executor.boot;
 
-import com.yiji.adk.common.boot.CommonConfiguration;
+import com.global.adk.common.boot.CommonConfiguration;
 import org.springframework.beans.factory.BeanClassLoaderAware;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.boot.context.properties.ConfigurationProperties;

@@ -2,7 +2,7 @@
  * www.yiji.com Inc.
  * Copyright (c) 2011 All Rights Reserved.
  */
-package com.yiji.adk.biz.executor;
+package com.global.adk.biz.executor;
 
 
 import com.yjf.common.lang.result.StandardResultInfo;

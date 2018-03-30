@@ -23,11 +23,11 @@
  * www.yiji.com Inc.
  * Copyright (c) 2011 All Rights Reserved.
  */
-package com.yiji.adk.biz.executor.monitor;
+package com.global.adk.biz.executor.monitor;
 
-import com.yiji.adk.biz.executor.ServiceContext;
-import com.yiji.adk.common.exception.InitializerException;
-import com.yiji.adk.common.exception.KitNestException;
+import com.global.adk.biz.executor.ServiceContext;
+import com.global.adk.common.exception.InitializerException;
+import com.global.adk.common.exception.KitNestException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.InitializingBean;

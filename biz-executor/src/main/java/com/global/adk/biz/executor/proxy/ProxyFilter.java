@@ -1,4 +1,4 @@
-package com.yiji.adk.biz.executor.proxy;
+package com.global.adk.biz.executor.proxy;
 
 import org.aopalliance.intercept.MethodInvocation;
 

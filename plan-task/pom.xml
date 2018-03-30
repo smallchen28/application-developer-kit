@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <artifactId>application-developer-kit</artifactId>
-        <groupId>com.yiji.adk</groupId>
+        <groupId>com.global.adk</groupId>
         <version>1.2.26-SNAPSHOT</version>
     </parent>
 
@@ -29,15 +29,15 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>com.yiji.adk</groupId>
+            <groupId>com.global.adk</groupId>
             <artifactId>common</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
 
         <!-- 测试 -->
         <dependency>
-            <groupId>com.yiji.boot</groupId>
-            <artifactId>yiji-boot-starter-jdbc</artifactId>
+            <groupId>com.global.boot</groupId>
+            <artifactId>global-boot-starter-jdbc</artifactId>
             <scope>test</scope>
         </dependency>
 

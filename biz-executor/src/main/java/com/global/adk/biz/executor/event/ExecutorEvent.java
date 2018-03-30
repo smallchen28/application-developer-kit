@@ -1,4 +1,4 @@
-package com.yiji.adk.biz.executor.event;
+package com.global.adk.biz.executor.event;
 
 /**
  * 执行器事件

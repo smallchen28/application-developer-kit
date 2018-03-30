@@ -1,7 +1,7 @@
-package com.yiji.adk.biz.executor;
+package com.global.adk.biz.executor;
 
-import com.yiji.adk.active.record.module.EntityObject;
-import com.yiji.adk.biz.executor.annotation.Invoke;
+import com.global.adk.active.record.module.EntityObject;
+import com.global.adk.biz.executor.annotation.Invoke;
 import com.yjf.common.lang.result.StandardResultInfo;
 
 /**

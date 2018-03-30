@@ -1,13 +1,13 @@
-package com.yiji.adk.biz.executor.statement;
+package com.global.adk.biz.executor.statement;
 
-import com.yiji.adk.active.record.DomainFactory;
-import com.yiji.adk.active.record.module.EntityObject;
-import com.yiji.adk.biz.executor.ServiceContext;
-import com.yiji.adk.biz.executor.event.InitEvent;
-import com.yiji.adk.biz.executor.event.ServiceApplyEvent;
-import com.yiji.adk.common.Constants;
-import com.yiji.adk.common.exception.InitializerException;
-import com.yiji.adk.event.Subscribe;
+import com.global.adk.active.record.DomainFactory;
+import com.global.adk.active.record.module.EntityObject;
+import com.global.adk.biz.executor.ServiceContext;
+import com.global.adk.biz.executor.event.InitEvent;
+import com.global.adk.biz.executor.event.ServiceApplyEvent;
+import com.global.adk.common.Constants;
+import com.global.adk.common.exception.InitializerException;
+import com.global.adk.event.Subscribe;
 import com.yjf.common.lang.result.StandardResultInfo;
 import com.yjf.common.lang.result.Status;
 

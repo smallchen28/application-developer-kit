@@ -1,6 +1,6 @@
-package com.yiji.adk.biz.executor.monitor;
+package com.global.adk.biz.executor.monitor;
 
-import com.yiji.adk.common.exception.ExecutorException;
+import com.global.adk.common.exception.ExecutorException;
 import org.mvel2.MVEL;
 import org.springframework.beans.factory.InitializingBean;
 

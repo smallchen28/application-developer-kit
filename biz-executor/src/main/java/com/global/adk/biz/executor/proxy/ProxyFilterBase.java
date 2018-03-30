@@ -1,7 +1,7 @@
-package com.yiji.adk.biz.executor.proxy;
+package com.global.adk.biz.executor.proxy;
 
-import com.yiji.adk.common.exception.KitNestException;
-import com.yiji.adk.common.exception.NestError;
+import com.global.adk.common.exception.KitNestException;
+import com.global.adk.common.exception.NestError;
 
 /**
  * 基础实现，增强排序。

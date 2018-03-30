@@ -23,7 +23,7 @@
  *           佛祖保佑       永无BUG
  */
 
-package com.yiji.adk.biz.executor.boot;
+package com.global.adk.biz.executor.boot;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.MutablePropertyValues;
@@ -42,16 +42,16 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.transaction.PlatformTransactionManager;
 
-import com.yiji.adk.active.record.DomainFactory;
-import com.yiji.adk.active.record.module.DBPlugin;
-import com.yiji.adk.biz.executor.ActivityExecutorContainer;
-import com.yiji.adk.biz.executor.ExecutorContainer;
-import com.yiji.adk.biz.executor.monitor.ExceptionMonitor;
-import com.yiji.adk.biz.executor.monitor.StandardExceptionMonitor;
-import com.yiji.adk.biz.executor.regcode.RegistryCodeVerify;
-import com.yiji.adk.biz.executor.support.dubbo.DubboServiceAPIGenerator;
-import com.yiji.adk.common.boot.CommonConfiguration;
-import com.yiji.boot.core.Apps;
+import com.global.adk.active.record.DomainFactory;
+import com.global.adk.active.record.module.DBPlugin;
+import com.global.adk.biz.executor.ActivityExecutorContainer;
+import com.global.adk.biz.executor.ExecutorContainer;
+import com.global.adk.biz.executor.monitor.ExceptionMonitor;
+import com.global.adk.biz.executor.monitor.StandardExceptionMonitor;
+import com.global.adk.biz.executor.regcode.RegistryCodeVerify;
+import com.global.adk.biz.executor.support.dubbo.DubboServiceAPIGenerator;
+import com.global.adk.common.boot.CommonConfiguration;
+import com.global.boot.core.Apps;
 import com.yjf.common.concurrent.MonitoredThreadPool;
 import com.yjf.common.util.StringUtils;
 
@@ -111,8 +111,8 @@ public class ExecutorConfiguration implements ApplicationContextAware, Initializ
 				threadPoolPropertyValues.add("enableGaugeMetric", true);
 				threadPoolPropertyValues.add("enableTimerMetric", true);
 				
-				factory.registerBeanDefinition("com.yiji.adk.biz.executor.async.threadpool", db);
-				this.monitoredThreadPool = factory.getBean("com.yiji.adk.biz.executor.async.threadpool",
+				factory.registerBeanDefinition("com.global.adk.biz.executor.async.threadpool", db);
+				this.monitoredThreadPool = factory.getBean("com.global.adk.biz.executor.async.threadpool",
 					MonitoredThreadPool.class);
 			}
 		}

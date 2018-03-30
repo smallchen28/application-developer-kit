@@ -23,7 +23,7 @@
  *  www.yiji.com Inc.
  *  Copyright (c) 2011 All Rights Reserved.
  */
-package com.yiji.adk.biz.executor.regcode;
+package com.global.adk.biz.executor.regcode;
 
 /**
  * 请求码

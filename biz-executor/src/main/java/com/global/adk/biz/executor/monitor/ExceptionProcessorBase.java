@@ -1,6 +1,6 @@
-package com.yiji.adk.biz.executor.monitor;
+package com.global.adk.biz.executor.monitor;
 
-import com.yiji.adk.biz.executor.ServiceContext;
+import com.global.adk.biz.executor.ServiceContext;
 import org.slf4j.Logger;
 
 import java.io.PrintWriter;

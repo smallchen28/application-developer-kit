@@ -2,13 +2,13 @@
  * www.yiji.com Inc.
  * Copyright (c) 2011 All Rights Reserved.
  */
-package com.yiji.adk.biz.executor.statement;
+package com.global.adk.biz.executor.statement;
 
-import com.yiji.adk.biz.executor.ServiceContext;
-import com.yiji.adk.biz.executor.event.InitEvent;
-import com.yiji.adk.biz.executor.event.ServiceApplyEvent;
-import com.yiji.adk.biz.executor.event.ServiceFinishEvent;
-import com.yiji.adk.event.Subscribe;
+import com.global.adk.biz.executor.ServiceContext;
+import com.global.adk.biz.executor.event.InitEvent;
+import com.global.adk.biz.executor.event.ServiceApplyEvent;
+import com.global.adk.biz.executor.event.ServiceFinishEvent;
+import com.global.adk.event.Subscribe;
 import com.yjf.common.lang.context.OperationContext;
 import com.yjf.common.lang.context.OperationContext.OperationTypeEnum;
 import com.yjf.common.lang.result.Status;

@@ -1,6 +1,6 @@
-package com.yiji.adk.biz.executor.event;
+package com.global.adk.biz.executor.event;
 
-import com.yiji.adk.biz.executor.ActivityExecutorContainer;
+import com.global.adk.biz.executor.ActivityExecutorContainer;
 
 public class InitEvent implements ExecutorEvent<ActivityExecutorContainer, Void> {
 	

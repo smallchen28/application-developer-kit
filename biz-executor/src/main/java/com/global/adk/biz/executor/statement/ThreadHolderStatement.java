@@ -1,9 +1,9 @@
-package com.yiji.adk.biz.executor.statement;
+package com.global.adk.biz.executor.statement;
 
-import com.yiji.adk.biz.executor.ServiceContextHolder;
-import com.yiji.adk.biz.executor.event.ServiceApplyEvent;
-import com.yiji.adk.biz.executor.event.ServiceFinishEvent;
-import com.yiji.adk.event.Subscribe;
+import com.global.adk.biz.executor.ServiceContextHolder;
+import com.global.adk.biz.executor.event.ServiceApplyEvent;
+import com.global.adk.biz.executor.event.ServiceFinishEvent;
+import com.global.adk.event.Subscribe;
 
 /**
  * 线程持有上下文

@@ -1,4 +1,4 @@
-package com.yiji.adk.biz.executor;
+package com.global.adk.biz.executor;
 
 import com.yjf.common.lang.result.StandardResultInfo;
 

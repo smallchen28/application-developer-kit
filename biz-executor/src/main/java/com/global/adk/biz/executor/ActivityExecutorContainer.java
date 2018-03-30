@@ -24,22 +24,22 @@
  *  Copyright (c) 2011 All Rights Reserved.
  */
 
-package com.yiji.adk.biz.executor;
+package com.global.adk.biz.executor;
 
 import com.google.common.base.Strings;
-import com.yiji.adk.active.record.DomainFactory;
-import com.yiji.adk.active.record.module.DBPlugin;
-import com.yiji.adk.biz.executor.annotation.Invoke;
-import com.yiji.adk.biz.executor.event.InitEvent;
-import com.yiji.adk.biz.executor.event.ServiceApplyEvent;
-import com.yiji.adk.biz.executor.event.ServiceFinishEvent;
-import com.yiji.adk.biz.executor.monitor.ExceptionMonitor;
-import com.yiji.adk.biz.executor.monitor.StandardExceptionMonitor;
-import com.yiji.adk.biz.executor.proxy.InvokServiceProxyFactory;
-import com.yiji.adk.biz.executor.regcode.RegistryCodeVerify;
-import com.yiji.adk.biz.executor.statement.*;
-import com.yiji.adk.common.exception.InitializerException;
-import com.yiji.adk.event.NotifierBus;
+import com.global.adk.active.record.DomainFactory;
+import com.global.adk.active.record.module.DBPlugin;
+import com.global.adk.biz.executor.annotation.Invoke;
+import com.global.adk.biz.executor.event.InitEvent;
+import com.global.adk.biz.executor.event.ServiceApplyEvent;
+import com.global.adk.biz.executor.event.ServiceFinishEvent;
+import com.global.adk.biz.executor.monitor.ExceptionMonitor;
+import com.global.adk.biz.executor.monitor.StandardExceptionMonitor;
+import com.global.adk.biz.executor.proxy.InvokServiceProxyFactory;
+import com.global.adk.biz.executor.regcode.RegistryCodeVerify;
+import com.global.adk.biz.executor.statement.*;
+import com.global.adk.common.exception.InitializerException;
+import com.global.adk.event.NotifierBus;
 import com.yjf.common.lang.context.OperationContext;
 import com.yjf.common.lang.result.StandardResultInfo;
 import org.springframework.beans.factory.InitializingBean;

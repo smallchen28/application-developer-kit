@@ -2,10 +2,10 @@
  * www.yiji.com Inc.
  * Copyright (c) 2011 All Rights Reserved.
  */
-package com.yiji.adk.biz.executor.event;
+package com.global.adk.biz.executor.event;
 
-import com.yiji.adk.biz.executor.ActivityExecutorContainer;
-import com.yiji.adk.biz.executor.ServiceContext;
+import com.global.adk.biz.executor.ActivityExecutorContainer;
+import com.global.adk.biz.executor.ServiceContext;
 
 /**
  * 服务完结事件

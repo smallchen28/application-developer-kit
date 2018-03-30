@@ -2,12 +2,12 @@
  * www.yiji.com Inc.
  * Copyright (c) 2011 All Rights Reserved.
  */
-package com.yiji.adk.biz.executor;
+package com.global.adk.biz.executor;
 
-import com.yiji.adk.biz.executor.annotation.Invoke;
-import com.yiji.adk.common.compiler.*;
-import com.yiji.adk.common.compiler.Compiler;
-import com.yiji.adk.common.log.TraceLogFactory;
+import com.global.adk.biz.executor.annotation.Invoke;
+import com.global.adk.common.compiler.*;
+import com.global.adk.common.compiler.Compiler;
+import com.global.adk.common.log.TraceLogFactory;
 import com.yjf.common.lang.result.StandardResultInfo;
 import javassist.CtClass;
 import org.slf4j.Logger;

@@ -2,9 +2,9 @@
  * www.yiji.com Inc.
  * Copyright (c) 2011 All Rights Reserved.
  */
-package com.yiji.adk.biz.executor.monitor;
+package com.global.adk.biz.executor.monitor;
 
-import com.yiji.adk.biz.executor.ServiceContext;
+import com.global.adk.biz.executor.ServiceContext;
 
 /**
  * 错误监听器

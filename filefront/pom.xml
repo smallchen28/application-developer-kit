@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <artifactId>application-developer-kit</artifactId>
-        <groupId>com.yiji.adk</groupId>
+        <groupId>com.global.adk</groupId>
         <version>1.2.26-SNAPSHOT</version>
     </parent>
     <artifactId>filefront</artifactId>
@@ -16,45 +16,45 @@
         </dependency>
 
         <dependency>
-            <groupId>com.yiji.adk</groupId>
+            <groupId>com.global.adk</groupId>
             <artifactId>api</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
 
         <dependency>
-            <groupId>com.yiji.adk</groupId>
+            <groupId>com.global.adk</groupId>
             <artifactId>biz-executor</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
 
         <dependency>
-            <groupId>com.yiji.adk</groupId>
+            <groupId>com.global.adk</groupId>
             <artifactId>event</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
 
         <dependency>
-            <groupId>com.yiji.boot</groupId>
-            <artifactId>yiji-boot-starter-dubbo</artifactId>
-            <version>${yiji.boot.version}</version>
+            <groupId>com.global.boot</groupId>
+            <artifactId>global-boot-starter-dubbo</artifactId>
+            <version>${global.boot.version}</version>
         </dependency>
 
         <dependency>
-            <groupId>com.yiji.boot</groupId>
-            <artifactId>yiji-boot-starter-jdbc</artifactId>
-            <version>${yiji.boot.version}</version>
+            <groupId>com.global.boot</groupId>
+            <artifactId>global-boot-starter-jdbc</artifactId>
+            <version>${global.boot.version}</version>
         </dependency>
 
         <dependency>
-            <groupId>com.yiji.boot</groupId>
-            <artifactId>yiji-boot-starter-mybatis</artifactId>
-            <version>${yiji.boot.version}</version>
+            <groupId>com.global.boot</groupId>
+            <artifactId>global-boot-starter-mybatis</artifactId>
+            <version>${global.boot.version}</version>
         </dependency>
 
         <dependency>
-            <groupId>com.yiji.boot</groupId>
-            <artifactId>yiji-boot-starter-test</artifactId>
-            <version>${yiji.boot.version}</version>
+            <groupId>com.global.boot</groupId>
+            <artifactId>global-boot-starter-test</artifactId>
+            <version>${global.boot.version}</version>
             <scope>test</scope>
         </dependency>
 

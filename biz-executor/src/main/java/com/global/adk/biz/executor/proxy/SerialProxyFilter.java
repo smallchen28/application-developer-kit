@@ -1,8 +1,8 @@
-package com.yiji.adk.biz.executor.proxy;
+package com.global.adk.biz.executor.proxy;
 
-import com.yiji.adk.active.record.module.DBPlugin;
-import com.yiji.adk.biz.executor.InvokeElement;
-import com.yiji.adk.biz.executor.annotation.Invoke;
+import com.global.adk.active.record.module.DBPlugin;
+import com.global.adk.biz.executor.InvokeElement;
+import com.global.adk.biz.executor.annotation.Invoke;
 import org.aopalliance.intercept.MethodInvocation;
 
 public class SerialProxyFilter extends ProxyFilterBase {

@@ -2,12 +2,12 @@
  * www.yiji.com Inc.
  * Copyright (c) 2011 All Rights Reserved.
  */
-package com.yiji.adk.biz.executor;
+package com.global.adk.biz.executor;
 
-import com.yiji.adk.active.record.module.EntityObject;
-import com.yiji.adk.biz.executor.regcode.RegistryCodeVerify;
+import com.global.adk.active.record.module.EntityObject;
+import com.global.adk.biz.executor.regcode.RegistryCodeVerify;
 import com.yjf.common.lang.context.OperationContext;
-import com.yiji.adk.common.log.TraceLogFactory;
+import com.global.adk.common.log.TraceLogFactory;
 import com.yjf.common.lang.result.StandardResultInfo;
 import org.slf4j.Logger;
 import org.springframework.util.Assert;

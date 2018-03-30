@@ -23,11 +23,11 @@
  *  www.yiji.com Inc.
  *  Copyright (c) 2011 All Rights Reserved.
  */
-package com.yiji.adk.biz.executor.monitor;
+package com.global.adk.biz.executor.monitor;
 
-import com.yiji.adk.biz.executor.InvokeElement;
-import com.yiji.adk.biz.executor.ServiceContext;
-import com.yiji.adk.common.Constants;
+import com.global.adk.biz.executor.InvokeElement;
+import com.global.adk.biz.executor.ServiceContext;
+import com.global.adk.common.Constants;
 import com.yjf.common.lang.result.StandardResultInfo;
 import com.yjf.common.lang.result.Status;
 

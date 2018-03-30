@@ -8,13 +8,13 @@
  * @author karott (e-mail:chenlin@yiji.com) 2017-04-19 15:06 创建
  *
  */
-package com.yiji.adk.biz.executor.support.dubbo;
+package com.global.adk.biz.executor.support.dubbo;
 
 import com.google.common.collect.Lists;
-import com.yiji.adk.api.annotation.DubboServiceAPI;
-import com.yiji.adk.biz.executor.ExecutorContainer;
-import com.yiji.adk.biz.executor.support.AbstractServiceAPIProviderGenerator;
-import com.yiji.adk.biz.executor.support.ServiceDescriptor;
+import com.global.adk.api.annotation.DubboServiceAPI;
+import com.global.adk.biz.executor.ExecutorContainer;
+import com.global.adk.biz.executor.support.AbstractServiceAPIProviderGenerator;
+import com.global.adk.biz.executor.support.ServiceDescriptor;
 import com.yjf.common.util.StringUtils;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;

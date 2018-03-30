@@ -25,9 +25,9 @@
     </description>
 
     <context:annotation-config/>
-    <context:component-scan base-package="com.yiji.adk.event.test"/>
+    <context:component-scan base-package="com.global.adk.event.test"/>
 
-    <bean class="com.yiji.adk.event.NotifierBus" id="notifierBus"/>
+    <bean class="com.global.adk.event.NotifierBus" id="notifierBus"/>
 
 
 </beans>

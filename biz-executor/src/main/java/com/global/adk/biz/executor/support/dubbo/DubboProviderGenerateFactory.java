@@ -8,16 +8,16 @@
  * @author karott (e-mail:chenlin@yiji.com) 2017-04-19 18:48 创建
  *
  */
-package com.yiji.adk.biz.executor.support.dubbo;
+package com.global.adk.biz.executor.support.dubbo;
 
 import com.alibaba.dubbo.common.bytecode.ClassGenerator;
 import com.alibaba.dubbo.common.utils.ClassHelper;
 import com.alibaba.dubbo.config.annotation.Service;
-import com.yiji.adk.api.annotation.DubboServiceAPI;
-import com.yiji.adk.api.annotation.InvokeName;
-import com.yiji.adk.common.compiler.Compiler;
-import com.yiji.adk.common.exception.CompilerException;
-import com.yiji.boot.core.Apps;
+import com.global.adk.api.annotation.DubboServiceAPI;
+import com.global.adk.api.annotation.InvokeName;
+import com.global.adk.common.compiler.Compiler;
+import com.global.adk.common.exception.CompilerException;
+import com.global.boot.core.Apps;
 import com.yjf.common.lang.context.OperationContext;
 import com.yjf.common.service.Order;
 import javassist.CannotCompileException;
