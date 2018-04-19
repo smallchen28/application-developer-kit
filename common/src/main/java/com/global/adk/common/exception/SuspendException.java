@@ -5,7 +5,7 @@
 package com.global.adk.common.exception;
 
 import com.global.adk.common.Constants;
-import com.yjf.common.lang.result.Status;
+import com.global.common.lang.result.Status;
 
 /**
  * 挂起错误，当该异常产生时，不会回滚事务！

@@ -8,8 +8,8 @@ import com.global.adk.biz.executor.event.ServiceApplyEvent;
 import com.global.adk.common.Constants;
 import com.global.adk.common.exception.InitializerException;
 import com.global.adk.event.Subscribe;
-import com.yjf.common.lang.result.StandardResultInfo;
-import com.yjf.common.lang.result.Status;
+import com.global.common.lang.result.StandardResultInfo;
+import com.global.common.lang.result.Status;
 
 public class PreparedStatement {
 	

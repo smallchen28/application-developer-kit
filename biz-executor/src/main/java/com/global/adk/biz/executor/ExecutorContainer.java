@@ -4,8 +4,8 @@
  */
 package com.global.adk.biz.executor;
 
-import com.yjf.common.lang.context.OperationContext;
-import com.yjf.common.lang.result.StandardResultInfo;
+import com.global.common.lang.context.OperationContext;
+import com.global.common.lang.result.StandardResultInfo;
 
 /**
  * 服务执行容器

@@ -12,4 +12,4 @@
  *
  * 文件前置处理
  */
-package com.yiji.adk.filefront;
+package com.global.adk.filefront;

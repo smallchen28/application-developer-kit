@@ -3,7 +3,7 @@ package com.global.adk.rules.drools;
 import com.global.adk.common.Constants;
 import com.global.adk.common.exception.RuleException;
 import com.global.adk.rules.drools.module.*;
-import com.yjf.common.lang.beans.Copier;
+import com.global.common.lang.beans.Copier;
 import org.apache.velocity.Template;
 import org.apache.velocity.VelocityContext;
 import org.apache.velocity.app.VelocityEngine;

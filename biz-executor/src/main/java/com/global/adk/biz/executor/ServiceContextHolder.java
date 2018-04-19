@@ -1,6 +1,6 @@
 package com.global.adk.biz.executor;
 
-import com.yjf.common.lang.result.StandardResultInfo;
+import com.global.common.lang.result.StandardResultInfo;
 
 /**
  * @author hasulee

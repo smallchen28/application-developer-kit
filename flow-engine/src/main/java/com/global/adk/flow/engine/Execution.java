@@ -10,7 +10,7 @@ import com.global.adk.flow.FlowContext;
 import com.global.adk.flow.module.Flow;
 import com.global.adk.flow.module.FlowNode;
 import com.global.adk.flow.state.FlowTrace;
-import com.yjf.common.log.Logger;
+import com.global.common.log.Logger;
 
 import java.sql.Timestamp;
 import java.util.Map;

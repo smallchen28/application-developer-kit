@@ -4,7 +4,7 @@
  */
 package com.global.adk.common.exception;
 
-import com.yjf.common.util.StringUtils;
+import com.global.common.util.StringUtils;
 
 /**
  * 内部异常定义

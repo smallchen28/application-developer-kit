@@ -1,9 +1,0 @@
-{
-  "groups": [{
-    "name": "yiji.adk.executor.axon",
-    "type": "com.global.adk.executor.axon.ExecutorAxonProperties",
-    "sourceType": "com.global.adk.executor.axon.ExecutorAxonProperties"
-  }],
-  "properties": [],
-  "hints": []
-}

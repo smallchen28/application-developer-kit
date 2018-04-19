@@ -29,7 +29,7 @@ package com.global.adk.rules.drools.test;
 import java.util.HashMap;
 
 import com.global.boot.core.Apps;
-import com.global.boot.core.globalBootApplication;
+//import com.global.boot.core.globalBootApplication;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;

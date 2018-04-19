@@ -6,8 +6,8 @@ package com.global.adk.common.exception;
 
 import com.global.adk.common.Constants;
 import com.global.boot.core.Apps;
-import com.yjf.common.lang.result.StandardResultInfo;
-import com.yjf.common.lang.result.Status;
+import com.global.common.lang.result.StandardResultInfo;
+import com.global.common.lang.result.Status;
 
 /**
  * 系统内部异常，此处应表现为无法识别的错误 。

@@ -11,7 +11,7 @@
 package com.global.adk.filefront.exceptions;
 
 import com.global.adk.common.exception.SystemException;
-import com.yjf.common.lang.result.Status;
+import com.global.common.lang.result.Status;
 
 /**
  * 文件配置异常

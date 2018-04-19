@@ -1,7 +1,7 @@
 package com.global.adk.rules.drools.module;
 
 import com.global.adk.rules.drools.DynamicConditionExecutor;
-import com.yjf.common.util.ToString;
+import com.global.common.util.ToString;
 
 import java.util.Map;
 

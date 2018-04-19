@@ -5,7 +5,7 @@
 package com.global.adk.biz.executor;
 
 
-import com.yjf.common.lang.result.StandardResultInfo;
+import com.global.common.lang.result.StandardResultInfo;
 
 /**
  * 适配，默认实现。

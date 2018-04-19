@@ -7,7 +7,7 @@ import com.global.adk.common.exception.PlanTaskException;
 import com.global.adk.plan.task.module.PlanTask;
 import com.global.adk.plan.task.module.PlanTaskTable;
 import com.global.adk.plan.task.module.SchedulerRepository;
-import com.yjf.common.concurrent.MonitoredThreadPool;
+import com.global.common.concurrent.MonitoredThreadPool;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.support.incrementer.OracleSequenceMaxValueIncrementer;
 

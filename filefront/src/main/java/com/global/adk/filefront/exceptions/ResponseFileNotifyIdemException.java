@@ -10,7 +10,7 @@
  */
 package com.global.adk.filefront.exceptions;
 
-import com.yjf.common.lang.result.Status;
+import com.global.common.lang.result.Status;
 
 /**
  * @author karott

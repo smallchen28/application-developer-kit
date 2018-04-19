@@ -3,7 +3,7 @@ package com.global.adk.rules.drools;
 import com.global.adk.api.order.*;
 import com.global.adk.common.exception.RuleException;
 import com.global.adk.rules.drools.module.*;
-import com.yjf.common.lang.beans.Copier;
+import com.global.common.lang.beans.Copier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

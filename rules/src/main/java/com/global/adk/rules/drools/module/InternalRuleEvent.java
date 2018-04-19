@@ -1,6 +1,6 @@
 package com.global.adk.rules.drools.module;
 
-import com.yjf.common.lang.security.MD5Util;
+import com.global.common.lang.security.MD5Util;
 
 import java.sql.Timestamp;
 import java.util.ArrayList;

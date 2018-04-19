@@ -26,7 +26,7 @@
 package com.global.adk.rules.drools.test;
 
 import com.global.boot.core.Apps;
-import com.global.boot.core.globalBootApplication;
+import com.global.boot.core.YijiBootApplication;
 import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.SpringApplicationConfiguration;

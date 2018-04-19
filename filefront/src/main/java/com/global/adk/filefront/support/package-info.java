@@ -11,4 +11,4 @@
  * @author karott
  *
  */
-package com.yiji.adk.filefront.support;
+package com.global.adk.filefront.support;

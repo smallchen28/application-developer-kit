@@ -1,6 +1,6 @@
 package com.global.adk.api.order;
 
-import com.yjf.common.util.ToString;
+import com.global.common.util.ToString;
 
 import java.io.Serializable;
 import java.util.ArrayList;

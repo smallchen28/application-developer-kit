@@ -11,4 +11,4 @@
  * @author karott
  *
  */
-package com.yiji.adk.filefront.dal;
+package com.global.adk.filefront.dal;

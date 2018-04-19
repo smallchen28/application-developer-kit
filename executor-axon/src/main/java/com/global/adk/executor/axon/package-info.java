@@ -13,4 +13,4 @@
  *
  * @author karott (e-mail:chenlin@yiji.com)
  */
-package com.yiji.adk.executor.axon;
+package com.global.adk.executor.axon;

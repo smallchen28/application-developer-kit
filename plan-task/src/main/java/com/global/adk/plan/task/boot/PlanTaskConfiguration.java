@@ -39,7 +39,7 @@ import org.springframework.jdbc.support.incrementer.OracleSequenceMaxValueIncrem
 
 import com.global.adk.common.boot.CommonConfiguration;
 import com.global.adk.plan.task.PlanTaskAdminFactoryBean;
-import com.yjf.common.concurrent.MonitoredThreadPool;
+import com.global.common.concurrent.MonitoredThreadPool;
 
 /**
  * @author hasulee

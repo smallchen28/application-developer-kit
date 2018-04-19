@@ -41,7 +41,7 @@ public class TestArrayEvent {
 		src.append("public void invocation(Object[] events){\n\t")
 			.append("for(int i = 0 ,j = events.length ; i < j ; i++){System.out.println(events[i]);}").append("}");
 		
-		Compiler compiler = com.yiji.adk.common.compiler.Compiler.getInstance();
+		Compiler compiler = com.global.adk.common.compiler.Compiler.getInstance();
 		
 		CtClass ctClass = compiler.newCtClass(AbstractDefinition.class);
 		

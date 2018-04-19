@@ -2,7 +2,7 @@ package com.global.adk.biz.executor;
 
 import com.global.adk.active.record.module.EntityObject;
 import com.global.adk.biz.executor.annotation.Invoke;
-import com.yjf.common.lang.result.StandardResultInfo;
+import com.global.common.lang.result.StandardResultInfo;
 
 /**
  * 执行元素

@@ -11,4 +11,4 @@
  * @author karott
  *
  */
-package com.yiji.adk.filefront.schedule;
+package com.global.adk.filefront.schedule;

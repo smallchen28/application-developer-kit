@@ -1,7 +1,7 @@
 package com.global.adk.api.order;
 
 import com.google.common.collect.Lists;
-import com.yjf.common.service.OrderCheckException;
+import com.global.common.service.OrderCheckException;
 import org.hibernate.validator.constraints.NotBlank;
 
 import javax.validation.constraints.NotNull;

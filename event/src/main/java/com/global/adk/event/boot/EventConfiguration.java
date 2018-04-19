@@ -27,8 +27,8 @@ package com.global.adk.event.boot;
 
 import com.global.adk.event.EventSupport;
 import com.global.adk.event.NotifierBus;
-import com.yjf.common.concurrent.MonitoredThreadPool;
-import com.yjf.common.util.StringUtils;
+import com.global.common.concurrent.MonitoredThreadPool;
+import com.global.common.util.StringUtils;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.MutablePropertyValues;
 import org.springframework.beans.factory.InitializingBean;

@@ -4,8 +4,8 @@
  */
 package com.global.adk.common.log;
 
-import com.yjf.common.log.Logger;
-import com.yjf.common.log.LoggerFactory;
+import com.global.common.log.Logger;
+import com.global.common.log.LoggerFactory;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;

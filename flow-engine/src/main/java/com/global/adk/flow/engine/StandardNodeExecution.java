@@ -14,7 +14,7 @@ import com.global.adk.flow.module.ActivityNode;
 import com.global.adk.flow.module.Flow;
 import com.global.adk.flow.module.FlowNode;
 import com.global.adk.flow.module.RetryNode;
-import com.yjf.common.log.Logger;
+import com.global.common.log.Logger;
 
 import java.sql.Timestamp;
 
