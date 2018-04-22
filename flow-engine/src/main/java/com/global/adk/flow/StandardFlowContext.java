@@ -5,7 +5,7 @@
 package com.global.adk.flow;
 
 import com.global.adk.common.exception.FlowException;
-import com.yjf.common.util.StringUtils;
+import com.global.common.util.StringUtils;
 
 import java.util.Map;
 

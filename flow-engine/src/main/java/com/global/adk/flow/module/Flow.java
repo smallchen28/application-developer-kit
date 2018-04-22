@@ -8,8 +8,8 @@ import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import com.global.adk.common.exception.FlowException;
 import com.global.adk.flow.engine.Execution;
-import com.yjf.common.lang.validator.YJFValidatorFactory;
-import com.yjf.common.util.StringUtils;
+import com.global.common.lang.validator.YJFValidatorFactory;
+import com.global.common.util.StringUtils;
 
 import javax.validation.ConstraintViolation;
 import javax.validation.Valid;

@@ -17,7 +17,7 @@ import com.global.adk.filefront.provider.FileNotifyProvider;
 import com.global.adk.filefront.schedule.RequestFileNotifySchedule;
 import com.global.adk.filefront.schedule.ResponseFileNotifySchedule;
 import com.global.adk.filefront.support.function.FunctionFactory;
-import com.yiji.boot.core.Apps;
+import com.global.boot.core.Apps;
 import org.junit.BeforeClass;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;

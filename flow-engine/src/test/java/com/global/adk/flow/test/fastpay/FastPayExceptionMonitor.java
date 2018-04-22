@@ -35,8 +35,8 @@ import com.global.adk.flow.module.Flow;
 import com.global.adk.flow.module.FlowNode;
 import org.springframework.stereotype.Component;
 
-import com.yjf.common.log.Logger;
-import com.yjf.common.log.LoggerFactory;
+import com.global.common.log.Logger;
+import com.global.common.log.LoggerFactory;
 
 /**
  * @author hasulee

@@ -38,7 +38,7 @@ import com.global.adk.active.record.DomainFactory;
 import com.global.adk.biz.executor.InvokeServiceAdapter;
 import com.global.adk.biz.executor.ServiceContext;
 import com.global.adk.biz.executor.annotation.Invoke;
-import com.yjf.common.lang.beans.Copier;
+import com.global.common.lang.beans.Copier;
 
 @Invoke(entityType = CustomerOrder.class, serviceName = "non-tx-invoke", validateGroup = { Default.class })
 public class NonTxInvokeService extends InvokeServiceAdapter<Order, OrderResult> {

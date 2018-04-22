@@ -122,19 +122,19 @@ public class ExecutorYijiBootTest {
         org.springframework.util.Assert.notNull(dubboServiceAPITestService);
         org.springframework.util.Assert.notNull(dubboServiceAPITestService1);
 
-        TestApiOrder order = new TestApiOrder();
-        order.setGid(GID.newGID());
-        order.setMerchOrderNo("00000000001111111111");
-        order.setPartnerId("00000000001111111111");
-        order.setReqId("00000000001111111111");
-
-        SubResult result = dubboServiceAPITestService.testService(order, new OperationContext());
-        Assert.assertNotNull(result);
-        Assert.assertEquals("0000", result.getCode());
-
-        result = dubboServiceAPITestService1.testService(order, new OperationContext());
-        Assert.assertNotNull(result);
-        Assert.assertEquals("0000", result.getCode());
+//        TestApiOrder order = new TestApiOrder();
+//        order.setGid(GID.newGID());
+//        order.setMerchOrderNo("00000000001111111111");
+//        order.setPartnerId("00000000001111111111");
+//        order.setReqId("00000000001111111111");
+//
+//        SubResult result = dubboServiceAPITestService.testService(order, new OperationContext());
+//        Assert.assertNotNull(result);
+//        Assert.assertEquals("0000", result.getCode());
+//
+//        result = dubboServiceAPITestService1.testService(order, new OperationContext());
+//        Assert.assertNotNull(result);
+//        Assert.assertEquals("0000", result.getCode());
     }
 
     @Test

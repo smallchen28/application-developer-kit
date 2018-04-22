@@ -10,9 +10,9 @@
  */
 package com.global.adk.biz.executor.support;
 
-import com.yjf.common.log.Logger;
-import com.yjf.common.log.LoggerFactory;
-import com.yjf.common.spring.ApplicationContextHolder;
+import com.global.common.log.Logger;
+import com.global.common.log.LoggerFactory;
+import com.global.common.spring.ApplicationContextHolder;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.config.AutowireCapableBeanFactory;
 import org.springframework.context.ApplicationContext;

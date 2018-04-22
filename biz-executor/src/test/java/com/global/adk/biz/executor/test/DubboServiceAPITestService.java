@@ -19,8 +19,8 @@ import com.global.common.lang.context.OperationContext;
 @DubboServiceAPI(group = "test", version = "1.0")
 public interface DubboServiceAPITestService {
 	
-	SubResult testService(TestApiOrder order, OperationContext context);
-	
-	SubResult testServiceNoContext(TestApiOrder order);
+//	SubResult testService(TestApiOrder order, OperationContext context);
+//	
+//	SubResult testServiceNoContext(TestApiOrder order);
 	
 }

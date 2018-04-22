@@ -27,7 +27,7 @@ package com.global.adk.flow.test.deposit;
 
 import com.global.adk.flow.annotation.Executor;
 import com.global.adk.flow.engine.Execution;
-import com.yjf.common.lang.result.StandardResultInfo;
+import com.global.common.lang.result.StandardResultInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

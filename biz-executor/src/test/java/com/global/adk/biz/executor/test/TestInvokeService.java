@@ -37,7 +37,7 @@ package com.global.adk.biz.executor.test;/*
 import com.global.adk.biz.executor.InvokeServiceAdapter;
 import com.global.adk.biz.executor.ServiceContext;
 import com.global.adk.biz.executor.annotation.Invoke;
-import com.yjf.common.lang.beans.Copier;
+import com.global.common.lang.beans.Copier;
 
 /**
  * @author qzhanbo@yiji.com

@@ -25,7 +25,7 @@
 
 package com.global.adk.flow.test.deposit;
 
-import com.yjf.common.lang.result.Status;
+import com.global.common.lang.result.Status;
 
 /**
  * @author hasulee

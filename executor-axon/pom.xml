@@ -39,12 +39,12 @@
             <groupId>com.thoughtworks.xstream</groupId>
             <artifactId>xstream</artifactId>
         </dependency>
-
+		<!--  
         <dependency>
             <groupId>com.cb.common</groupId>
             <artifactId>cutebear-common-util</artifactId>
         </dependency>
-
+-->
     </dependencies>
 
 </project>

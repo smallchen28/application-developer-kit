@@ -18,8 +18,8 @@ import com.global.adk.api.annotation.InvokeName;
 import com.global.adk.common.compiler.Compiler;
 import com.global.adk.common.exception.CompilerException;
 import com.global.boot.core.Apps;
-import com.yjf.common.lang.context.OperationContext;
-import com.yjf.common.service.Order;
+import com.global.common.lang.context.OperationContext;
+import com.global.common.service.Order;
 import javassist.CannotCompileException;
 import javassist.ClassPool;
 import javassist.CtClass;
@@ -85,7 +85,7 @@ public class DubboProviderGenerateFactory {
                 "\n\tprivate com.yiji.adk.biz.executor.ExecutorContainer container;",
                 Autowired.class.getCanonicalName());
         compiler.filedWeave(implCtClass,
-                "\n\tprivate com.yjf.common.lang.context.OperationContext context=new com.yjf.common.lang.context.OperationContext();");
+                "\n\tprivate com.global.common.lang.context.OperationContext context=new com.global.common.lang.context.OperationContext();");
     }
 
     private static String createMethodByApiServiceMethod(Method method, Class apiService) {

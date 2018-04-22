@@ -70,7 +70,22 @@
             <groupId>com.yjf.scheduler</groupId>
             <artifactId>scheduler-facade</artifactId>
             <version>2.0.20160118</version>
+            
             <scope>provided</scope>
+            <exclusions>
+                 <exclusion>
+		            <groupId>com.yiji.boot</groupId>
+		            <artifactId>yiji-boot-starter-actuator</artifactId>
+                 </exclusion>
+                 <exclusion>
+                     <groupId>com.yiji.boot</groupId>
+            		 <artifactId>yiji-boot-starter-metrics</artifactId>
+                 </exclusion>
+             </exclusions>
+            
+            
+            
+            
         </dependency>
 		
         <dependency>

@@ -43,7 +43,7 @@ import com.global.adk.common.boot.CommonConfiguration;
 import com.global.adk.common.exception.FlowException;
 import com.global.adk.common.jdbc.DialectUtil;
 import com.global.boot.core.Apps;
-import com.yjf.common.util.StringUtils;
+import com.global.common.util.StringUtils;
 
 /**
  * 流程引擎配置选项

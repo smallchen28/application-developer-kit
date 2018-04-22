@@ -107,12 +107,14 @@
                 <version>${mvel.version}</version>
             </dependency>
 
+
+			<!--  
             <dependency>
                 <groupId>com.cb.common</groupId>
                 <artifactId>cutebear-common-util</artifactId>
                 <version>${cutebearcommon.version}</version>
             </dependency>
-
+			-->
             <dependency>
                 <groupId>org.axonframework</groupId>
                 <artifactId>axon-core</artifactId>

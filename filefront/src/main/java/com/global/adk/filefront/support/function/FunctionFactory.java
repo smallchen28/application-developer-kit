@@ -12,8 +12,8 @@ package com.global.adk.filefront.support.function;
 
 import com.google.common.collect.Maps;
 import com.global.adk.filefront.exceptions.FileBizException;
-import com.yjf.common.log.Logger;
-import com.yjf.common.log.LoggerFactory;
+import com.global.common.log.Logger;
+import com.global.common.log.LoggerFactory;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 

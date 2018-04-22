@@ -77,13 +77,15 @@
             <scope>test</scope>
         </dependency>
 
+		<!--  
         <dependency>
             <groupId>com.cb.common</groupId>
             <artifactId>cutebear-common-util</artifactId>
             <version>1.0-SNAPSHOT</version>
             <scope>test</scope>
         </dependency>
-
+	-->
+	
     </dependencies>
 
 </project>

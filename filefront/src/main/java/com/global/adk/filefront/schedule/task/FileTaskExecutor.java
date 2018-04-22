@@ -12,9 +12,9 @@ package com.global.adk.filefront.schedule.task;
 
 import com.global.adk.filefront.exceptions.FileBizException;
 import com.global.adk.filefront.support.transaction.FileTransactionManager;
-import com.yjf.common.concurrent.MonitoredThreadPoolExecutor;
-import com.yjf.common.log.Logger;
-import com.yjf.common.log.LoggerFactory;
+import com.global.common.concurrent.MonitoredThreadPoolExecutor;
+import com.global.common.log.Logger;
+import com.global.common.log.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.TransactionStatus;
 import org.springframework.transaction.support.TransactionCallbackWithoutResult;

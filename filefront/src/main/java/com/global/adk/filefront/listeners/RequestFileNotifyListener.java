@@ -23,7 +23,7 @@ import com.global.adk.filefront.support.config.FileConfigContext;
 import com.global.adk.filefront.support.config.FileConfigParser;
 import com.global.adk.filefront.support.consts.FilefrontConsts;
 import com.global.adk.filefront.support.consts.StatusConsts;
-import com.yjf.common.lang.beans.Copier;
+import com.global.common.lang.beans.Copier;
 
 import java.io.File;
 import java.util.Date;

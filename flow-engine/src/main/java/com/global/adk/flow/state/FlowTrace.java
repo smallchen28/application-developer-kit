@@ -18,10 +18,10 @@ import com.global.adk.flow.state.retry.RetryFailTypeEnum;
 import com.global.adk.flow.state.retry.RetryMeta;
 import com.global.adk.flow.state.retry.RetryRetreatTimeUnitEnum;
 import com.global.adk.flow.state.retry.RetryRetreatTypeEnum;
-import com.yjf.common.id.GID;
-import com.yjf.common.lang.beans.Copier;
-import com.yjf.common.util.StringUtils;
-import com.yjf.common.util.ToString;
+import com.global.common.id.GID;
+import com.global.common.lang.beans.Copier;
+import com.global.common.util.StringUtils;
+import com.global.common.util.ToString;
 import org.joda.time.DateTime;
 import org.springframework.util.Assert;
 

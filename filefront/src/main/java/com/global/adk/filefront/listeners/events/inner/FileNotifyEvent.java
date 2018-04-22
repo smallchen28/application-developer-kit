@@ -13,7 +13,7 @@ package com.global.adk.filefront.listeners.events.inner;
 import com.google.common.collect.Maps;
 import com.global.adk.filefront.dal.entity.FileNotify;
 import com.global.adk.api.enums.FileServiceType;
-import com.yjf.common.util.ToString;
+import com.global.common.util.ToString;
 
 import java.io.Serializable;
 import java.util.Date;

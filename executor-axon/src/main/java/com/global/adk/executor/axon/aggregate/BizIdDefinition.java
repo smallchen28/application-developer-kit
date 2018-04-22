@@ -10,7 +10,7 @@
  */
 package com.global.adk.executor.axon.aggregate;
 
-import com.yjf.common.util.ToString;
+import com.global.common.util.ToString;
 
 import java.io.Serializable;
 

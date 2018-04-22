@@ -9,7 +9,7 @@
     <artifactId>filefront</artifactId>
 
     <dependencies>
-
+		
         <dependency>
             <groupId>com.oracle</groupId>
             <artifactId>ojdbc14</artifactId>
@@ -62,6 +62,18 @@
             <groupId>com.yjf.scheduler</groupId>
             <artifactId>scheduler-facade</artifactId>
             <version>2.0.20160118</version>
+            <exclusions>
+                 <exclusion>
+		            <groupId>com.yiji.boot</groupId>
+		            <artifactId>yiji-boot-starter-actuator</artifactId>
+                 </exclusion>
+                 <exclusion>
+                     <groupId>com.yiji.boot</groupId>
+            		 <artifactId>yiji-boot-starter-metrics</artifactId>
+                 </exclusion>
+             </exclusions>
+            
+            
         </dependency>
 
         <dependency>

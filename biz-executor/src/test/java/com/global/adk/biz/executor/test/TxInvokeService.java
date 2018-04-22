@@ -34,7 +34,7 @@ import com.global.adk.active.record.DomainFactory;
 import com.global.adk.biz.executor.InvokeServiceAdapter;
 import com.global.adk.biz.executor.ServiceContext;
 import com.global.adk.biz.executor.annotation.Invoke;
-import com.yjf.common.lang.beans.Copier;
+import com.global.common.lang.beans.Copier;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.validation.groups.Default;

@@ -15,7 +15,7 @@ import com.global.adk.api.annotation.DubboServiceAPI;
 import com.global.adk.biz.executor.ExecutorContainer;
 import com.global.adk.biz.executor.support.AbstractServiceAPIProviderGenerator;
 import com.global.adk.biz.executor.support.ServiceDescriptor;
-import com.yjf.common.util.StringUtils;
+import com.global.common.util.StringUtils;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.core.io.support.ResourcePatternResolver;

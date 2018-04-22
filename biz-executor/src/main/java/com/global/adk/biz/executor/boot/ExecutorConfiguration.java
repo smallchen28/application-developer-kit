@@ -52,8 +52,8 @@ import com.global.adk.biz.executor.regcode.RegistryCodeVerify;
 import com.global.adk.biz.executor.support.dubbo.DubboServiceAPIGenerator;
 import com.global.adk.common.boot.CommonConfiguration;
 import com.global.boot.core.Apps;
-import com.yjf.common.concurrent.MonitoredThreadPool;
-import com.yjf.common.util.StringUtils;
+import com.global.common.concurrent.MonitoredThreadPool;
+import com.global.common.util.StringUtils;
 
 /**
  * @author hasulee

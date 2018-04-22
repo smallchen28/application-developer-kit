@@ -20,10 +20,10 @@ import com.global.common.lang.context.OperationContext;
 @DubboServiceAPI(group = "test", version = "1.0")
 public interface DubboServiceAPITestService1 {
 	
-	@InvokeName("testService")
-	SubResult testService(TestApiOrder order, OperationContext context);
-	
-	@InvokeName("testServiceNoContext")
-	SubResult testServiceNoContext(TestApiOrder order);
+//	@InvokeName("testService")
+//	SubResult testService(TestApiOrder order, OperationContext context);
+//	
+//	@InvokeName("testServiceNoContext")
+//	SubResult testServiceNoContext(TestApiOrder order);
 	
 }
