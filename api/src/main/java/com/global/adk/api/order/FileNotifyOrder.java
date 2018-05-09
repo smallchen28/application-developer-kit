@@ -12,7 +12,7 @@ package com.global.adk.api.order;
 
 import com.google.common.collect.Maps;
 import com.global.adk.api.enums.FileServiceType;
-import com.global.common.service.*;
+import com.yjf.common.service.*;
 import org.hibernate.validator.constraints.NotBlank;
 
 import javax.validation.constraints.NotNull;
@@ -23,7 +23,7 @@ import java.util.Map;
 /**
  * @author karott
  */
-public class FileNotifyOrder extends com.global.common.service.OrderBase {
+public class FileNotifyOrder extends com.yjf.common.service.OrderBase {
 	
 	/**
 	 * 请求id,批次号

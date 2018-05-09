@@ -10,7 +10,7 @@ import com.global.adk.flow.FlowContext;
 import com.global.adk.flow.module.Flow;
 import com.global.adk.flow.module.FlowNode;
 import com.global.adk.flow.state.FlowTrace;
-import com.global.common.log.Logger;
+import com.yjf.common.log.Logger;
 
 import java.sql.Timestamp;
 import java.util.Map;
@@ -239,7 +239,7 @@ public class Execution {
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("com.yiji.adk.flow.engine.Execution{");
+        final StringBuilder sb = new StringBuilder("com.global.adk.flow.engine.Execution{");
         sb.append("Target=").append(target);
         sb.append(", Attachment=").append(attachment);
         sb.append(", StateMachine=").append(currentFlow.getName());

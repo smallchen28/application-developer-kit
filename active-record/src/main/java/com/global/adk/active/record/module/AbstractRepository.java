@@ -10,8 +10,8 @@
  */
 package com.global.adk.active.record.module;
 
-import com.global.common.log.Logger;
-import com.global.common.log.LoggerFactory;
+import com.yjf.common.log.Logger;
+import com.yjf.common.log.LoggerFactory;
 import org.springframework.util.Assert;
 
 /**

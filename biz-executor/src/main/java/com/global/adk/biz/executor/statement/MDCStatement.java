@@ -13,7 +13,7 @@ package com.global.adk.biz.executor.statement;
 import com.global.adk.biz.executor.event.ServiceApplyEvent;
 import com.global.adk.biz.executor.event.ServiceFinishEvent;
 import com.global.adk.event.Subscribe;
-import com.global.common.service.Order;
+import com.yjf.common.service.Order;
 import org.slf4j.MDC;
 
 /**

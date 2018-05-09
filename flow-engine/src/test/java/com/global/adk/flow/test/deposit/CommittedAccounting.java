@@ -28,8 +28,8 @@ package com.global.adk.flow.test.deposit;
 import com.global.adk.flow.annotation.*;
 import com.global.adk.flow.annotation.Error;
 import com.global.adk.flow.engine.Execution;
-import com.global.common.lang.result.StandardResultInfo;
-import com.global.common.lang.result.Status;
+import com.yjf.common.lang.result.StandardResultInfo;
+import com.yjf.common.lang.result.Status;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

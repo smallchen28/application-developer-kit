@@ -4,7 +4,7 @@
  */
 package com.global.adk.common.exception;
 
-import com.global.common.lang.result.Status;
+import com.yjf.common.lang.result.Status;
 
 /**
  * 业务错误

@@ -26,7 +26,7 @@
 package com.global.adk.biz.executor.test;
 
 
-import com.global.common.lang.result.StandardResultInfo;
+import com.yjf.common.lang.result.StandardResultInfo;
 
 public class OrderResult extends StandardResultInfo {
 	

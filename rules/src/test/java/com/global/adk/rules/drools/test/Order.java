@@ -29,7 +29,7 @@ import com.google.common.collect.Maps;
 import org.apache.commons.lang.builder.ToStringBuilder;
 import org.apache.commons.lang.builder.ToStringStyle;
 
-import com.global.common.lang.util.money.Money;
+import com.yjf.common.lang.util.money.Money;
 
 import java.util.Map;
 

@@ -11,7 +11,7 @@
 package com.global.adk.filefront.exceptions;
 
 import com.global.adk.common.exception.BizException;
-import com.global.common.lang.result.Status;
+import com.yjf.common.lang.result.Status;
 
 /**
  * @author karott

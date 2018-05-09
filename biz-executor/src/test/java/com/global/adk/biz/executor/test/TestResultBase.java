@@ -25,7 +25,7 @@
 
 package com.global.adk.biz.executor.test;
 
-import com.global.common.lang.result.StandardResultInfo;
+import com.yjf.common.lang.result.StandardResultInfo;
 
 /**
  * Created by hasulee on 15-1-13.

@@ -5,7 +5,7 @@
 package com.global.adk.common.exception;
 
 import com.global.adk.common.Constants;
-import com.global.common.lang.result.Status;
+import com.yjf.common.lang.result.Status;
 
 /**
  * 非法请求参数错误

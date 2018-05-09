@@ -9,9 +9,9 @@ import com.global.adk.biz.executor.event.InitEvent;
 import com.global.adk.biz.executor.event.ServiceApplyEvent;
 import com.global.adk.biz.executor.event.ServiceFinishEvent;
 import com.global.adk.event.Subscribe;
-import com.global.common.lang.context.OperationContext;
-import com.global.common.lang.context.OperationContext.OperationTypeEnum;
-import com.global.common.lang.result.Status;
+import com.yjf.common.lang.context.OperationContext;
+import com.yjf.common.lang.context.OperationContext.OperationTypeEnum;
+import com.yjf.common.lang.result.Status;
 import org.slf4j.Logger;
 
 import java.util.Iterator;

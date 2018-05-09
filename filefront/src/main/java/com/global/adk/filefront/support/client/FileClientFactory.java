@@ -16,8 +16,8 @@ import com.global.adk.filefront.exceptions.FileBizException;
 import com.global.adk.api.enums.FileServiceType;
 import com.global.adk.filefront.support.config.FileConfigContext;
 import com.global.adk.filefront.support.config.FileConfigParser;
-import com.global.common.log.Logger;
-import com.global.common.log.LoggerFactory;
+import com.yjf.common.log.Logger;
+import com.yjf.common.log.LoggerFactory;
 
 import java.io.File;
 import java.util.Calendar;

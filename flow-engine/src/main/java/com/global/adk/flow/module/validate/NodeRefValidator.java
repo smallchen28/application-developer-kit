@@ -5,7 +5,7 @@
 package com.global.adk.flow.module.validate;
 
 import com.global.adk.flow.module.NodeRef;
-import com.global.common.util.StringUtils;
+import com.yjf.common.util.StringUtils;
 
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;

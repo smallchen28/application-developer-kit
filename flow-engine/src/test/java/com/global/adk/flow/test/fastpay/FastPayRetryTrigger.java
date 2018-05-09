@@ -13,9 +13,9 @@ package com.global.adk.flow.test.fastpay;
 import com.google.common.collect.Maps;
 import com.global.adk.flow.state.retry.FlowRetryTrigger;
 import com.global.adk.flow.state.retry.RetryFailTypeEnum;
-import com.global.common.lang.result.Status;
-import com.global.common.log.Logger;
-import com.global.common.log.LoggerFactory;
+import com.yjf.common.lang.result.Status;
+import com.yjf.common.log.Logger;
+import com.yjf.common.log.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 import java.util.Date;

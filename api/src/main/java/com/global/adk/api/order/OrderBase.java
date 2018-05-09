@@ -1,8 +1,8 @@
 package com.global.adk.api.order;
 
-import com.global.common.lang.validator.YJFValidatorFactory;
-import com.global.common.service.OrderCheckException;
-import com.global.common.service.Validatable;
+import com.yjf.common.lang.validator.YJFValidatorFactory;
+import com.yjf.common.service.OrderCheckException;
+import com.yjf.common.service.Validatable;
 
 import javax.validation.ConstraintViolation;
 import java.io.Serializable;

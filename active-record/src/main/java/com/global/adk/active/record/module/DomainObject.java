@@ -7,7 +7,7 @@ package com.global.adk.active.record.module;
 import com.global.adk.active.record.DomainFactory;
 import com.global.adk.active.record.annotation.SqlBinder;
 import com.global.adk.common.exception.DomainException;
-import com.global.common.util.StringUtils;
+import com.yjf.common.util.StringUtils;
 import org.mybatis.spring.SqlSessionTemplate;
 
 /**

@@ -8,7 +8,7 @@ import com.global.adk.biz.executor.annotation.Invoke;
 import com.global.adk.common.compiler.*;
 import com.global.adk.common.compiler.Compiler;
 import com.global.adk.common.log.TraceLogFactory;
-import com.global.common.lang.result.StandardResultInfo;
+import com.yjf.common.lang.result.StandardResultInfo;
 import javassist.CtClass;
 import org.slf4j.Logger;
 
@@ -103,7 +103,7 @@ public class InvokeElementFactory {
 	private String generateNewResult(String resultClass, String serviceName) {
 
 		StringBuilder src = new StringBuilder();
-		src.append("public com.global.common.lang.result.StandardResultInfo newResult(){\n\t").append("return ");
+		src.append("public com.yjf.common.lang.result.StandardResultInfo newResult(){\n\t").append("return ");
 		if (resultClass == null || resultClass.equals("")) {
 			src.append("null;\n}");
 		} else {

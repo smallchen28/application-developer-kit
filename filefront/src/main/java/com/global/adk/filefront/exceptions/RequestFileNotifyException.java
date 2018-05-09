@@ -10,7 +10,7 @@
  */
 package com.global.adk.filefront.exceptions;
 
-import com.global.common.lang.result.Status;
+import com.yjf.common.lang.result.Status;
 
 /**
  * 请求文件通知异常,请求文件通知相关的监听处理异常统一用此异常

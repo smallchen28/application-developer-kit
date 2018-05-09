@@ -27,8 +27,8 @@ package com.global.adk.event.boot;
 
 import com.global.adk.event.EventSupport;
 import com.global.adk.event.NotifierBus;
-import com.global.common.concurrent.MonitoredThreadPool;
-import com.global.common.util.StringUtils;
+import com.yjf.common.concurrent.MonitoredThreadPool;
+import com.yjf.common.util.StringUtils;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.MutablePropertyValues;
 import org.springframework.beans.factory.InitializingBean;
@@ -102,8 +102,8 @@ public class EventConfiguration implements ApplicationContextAware, Initializing
 				threadPoolPropertyValues.add("enableGaugeMetric", true);
 				threadPoolPropertyValues.add("enableTimerMetric", true);
 				
-				factory.registerBeanDefinition("com.yiji.adk.event.async.threadpool", db);
-				this.monitoredThreadPool = factory.getBean("com.yiji.adk.event.async.threadpool",
+				factory.registerBeanDefinition("com.global.adk.event.async.threadpool", db);
+				this.monitoredThreadPool = factory.getBean("com.global.adk.event.async.threadpool",
 					MonitoredThreadPool.class);
 			}
 		}

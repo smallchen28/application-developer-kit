@@ -1,8 +1,8 @@
 package com.global.adk.common.exception;
 
 import com.global.adk.common.Constants;
-import com.global.common.lang.result.StandardResultInfo;
-import com.global.common.lang.result.Status;
+import com.yjf.common.lang.result.StandardResultInfo;
+import com.yjf.common.lang.result.Status;
 
 /**
  * 应用系统异常定义

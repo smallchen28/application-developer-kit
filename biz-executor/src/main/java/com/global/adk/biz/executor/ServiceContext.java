@@ -6,9 +6,9 @@ package com.global.adk.biz.executor;
 
 import com.global.adk.active.record.module.EntityObject;
 import com.global.adk.biz.executor.regcode.RegistryCodeVerify;
-import com.global.common.lang.context.OperationContext;
+import com.yjf.common.lang.context.OperationContext;
 import com.global.adk.common.log.TraceLogFactory;
-import com.global.common.lang.result.StandardResultInfo;
+import com.yjf.common.lang.result.StandardResultInfo;
 import org.slf4j.Logger;
 import org.springframework.util.Assert;
 

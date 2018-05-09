@@ -25,7 +25,7 @@
 
 package com.global.adk.biz.executor.test;
 
-import com.global.common.service.OrderBase;
+import com.yjf.common.service.OrderBase;
 
 import javax.validation.constraints.NotNull;
 

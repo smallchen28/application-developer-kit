@@ -1,6 +1,6 @@
 package com.global.adk.rules.drools.module;
 
-import com.global.common.lang.security.MD5Util;
+import com.yjf.common.lang.security.MD5Util;
 
 import java.sql.Timestamp;
 import java.util.ArrayList;
@@ -155,7 +155,7 @@ public class InternalRuleEvent {
 	}
 	
 	public String toDRLPackage(){
-		StringBuilder pack = new StringBuilder("com.yiji.adk.rules.drools.generate");
+		StringBuilder pack = new StringBuilder("com.global.adk.rules.drools.generate");
 		pack.append(MD5Util.encodeByMD5(eventName));
 		return pack.toString();
 	}

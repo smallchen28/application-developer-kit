@@ -9,7 +9,7 @@ import com.global.adk.common.exception.FlowException;
 import com.global.adk.flow.delegate.InvokeDelegateContext;
 import com.global.adk.flow.engine.Execution;
 import com.global.adk.flow.engine.NodeExecution;
-import com.global.common.util.StringUtils;
+import com.yjf.common.util.StringUtils;
 
 import javax.validation.Valid;
 import javax.validation.constraints.Size;

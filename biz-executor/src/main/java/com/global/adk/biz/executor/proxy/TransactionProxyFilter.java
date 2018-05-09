@@ -10,7 +10,7 @@ import com.global.adk.common.exception.NestError;
 import com.global.adk.common.exception.SuspendException;
 import com.global.adk.common.exception.SystemException;
 import com.global.adk.common.log.TraceLogFactory;
-import com.global.common.log.Logger;
+import com.yjf.common.log.Logger;
 import org.aopalliance.intercept.MethodInvocation;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.TransactionDefinition;

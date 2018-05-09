@@ -11,7 +11,7 @@
 
 package com.global.adk.flow.state;
 
-import com.global.common.id.GID;
+import com.yjf.common.id.GID;
 
 import java.util.Date;
 

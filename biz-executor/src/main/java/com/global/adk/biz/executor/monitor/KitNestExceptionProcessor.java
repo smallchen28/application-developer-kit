@@ -29,8 +29,8 @@ import com.global.adk.biz.executor.ServiceContext;
 import com.global.adk.common.Constants;
 import com.global.adk.common.exception.SuspendException;
 import com.global.adk.common.exception.SystemException;
-import com.global.common.lang.result.StandardResultInfo;
-import com.global.common.lang.result.Status;
+import com.yjf.common.lang.result.StandardResultInfo;
+import com.yjf.common.lang.result.Status;
 
 /**
  * 

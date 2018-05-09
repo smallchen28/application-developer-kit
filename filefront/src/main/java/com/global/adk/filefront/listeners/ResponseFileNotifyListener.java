@@ -28,9 +28,9 @@ import com.global.adk.filefront.support.config.FileConfigContext;
 import com.global.adk.filefront.support.config.FileConfigParser;
 import com.global.adk.filefront.support.consts.FilefrontConsts;
 import com.global.adk.filefront.support.consts.StatusConsts;
-import com.global.common.dubbo.DubboRemoteProxyFacotry;
-import com.global.common.lang.beans.Copier;
-import com.global.common.lang.result.Status;
+import com.yjf.common.dubbo.DubboRemoteProxyFacotry;
+import com.yjf.common.lang.beans.Copier;
+import com.yjf.common.lang.result.Status;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DuplicateKeyException;
 

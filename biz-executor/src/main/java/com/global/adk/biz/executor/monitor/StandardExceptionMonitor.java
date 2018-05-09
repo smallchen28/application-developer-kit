@@ -95,7 +95,7 @@ public class StandardExceptionMonitor implements ExceptionMonitor, InitializingB
 			}
 		} else {
 			//- 1. KitNestException 业务内部异常
-			String mvelScript = "throwable instanceof com.yiji.adk.common.exception.KitNestException";
+			String mvelScript = "throwable instanceof com.global.adk.common.exception.KitNestException";
 			ExceptionProcessor processor = new KitNestExceptionProcessor();
 			processor.setLogger(logger);
 			processor.setSystemName(systemName);
@@ -122,7 +122,7 @@ public class StandardExceptionMonitor implements ExceptionMonitor, InitializingB
 	public void catcher(Throwable e, ServiceContext<?, ?> serviceContext) {
 		
 		if (e instanceof Error) {
-			logger.error("卧槽！error错误##{}", e.getMessage());
+			logger.error("error错误{}", e.getMessage());
 			throw (Error) e;
 		}
 		
@@ -137,7 +137,7 @@ public class StandardExceptionMonitor implements ExceptionMonitor, InitializingB
 				logger.error("异常处理失败，没有对应的处理器对应该异常,ExceptionProcessorChain={}",exceptionProcessorChain.toString(),e);
 			}
 		} catch (Throwable e1) {
-			logger.error("######处理异常出错，忽略异常处理(请通知文弱童鞋，修复bug了……)。######", e1);
+			logger.error("处理异常出错，忽略异常处理", e1);
 			logger.error("######原始异常######", e);
 		}
 	}

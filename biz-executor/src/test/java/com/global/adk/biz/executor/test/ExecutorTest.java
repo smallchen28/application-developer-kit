@@ -27,9 +27,9 @@ package com.global.adk.biz.executor.test;
 
 import com.global.adk.biz.executor.ActivityExecutorContainer;
 import com.global.adk.common.exception.DomainException;
-import com.global.common.lang.context.OperationContext;
-import com.global.common.lang.context.OperationContext.BusinessTypeEnum;
-import com.global.common.lang.context.OperationContext.OperationTypeEnum;
+import com.yjf.common.lang.context.OperationContext;
+import com.yjf.common.lang.context.OperationContext.BusinessTypeEnum;
+import com.yjf.common.lang.context.OperationContext.OperationTypeEnum;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;

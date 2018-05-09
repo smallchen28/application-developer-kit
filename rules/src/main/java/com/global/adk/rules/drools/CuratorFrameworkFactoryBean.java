@@ -5,8 +5,8 @@
 
 package com.global.adk.rules.drools;
 
-import com.global.common.log.Logger;
-import com.global.common.log.LoggerFactory;
+import com.yjf.common.log.Logger;
+import com.yjf.common.log.LoggerFactory;
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.CuratorFrameworkFactory;
 import org.apache.curator.retry.RetryNTimes;

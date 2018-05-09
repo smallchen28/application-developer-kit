@@ -33,7 +33,7 @@ import com.google.common.collect.Maps;
 import com.global.adk.flow.FlowContext;
 import com.global.boot.core.Apps;
 import com.global.boot.core.YijiBootApplication;
-import com.global.common.lang.result.Status;
+import com.yjf.common.lang.result.Status;
 import com.yjf.scheduler.service.api.ScheduleCallBackService;
 
 import org.junit.BeforeClass;

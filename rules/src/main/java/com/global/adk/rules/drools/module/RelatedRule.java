@@ -269,10 +269,10 @@ public class RelatedRule implements Comparable<RelatedRule> {
 		StringBuilder script = new StringBuilder();
 		
 		script
-			.append("com.yiji.adk.rules.drools.CurrentRelatedRuleInfo  currentRelatedRuleInfo = ")
+			.append("com.global.adk.rules.drools.CurrentRelatedRuleInfo  currentRelatedRuleInfo = ")
 			.append(
-				"new com.yiji.adk.rules.drools.CurrentRelatedRuleInfo($rule.getIdentity(),$rule.getRuleName(),$rule.getDescription(),com.alibaba.fastjson.JSON.toJSONString($rule.getRelatedContext())); ")
-			.append("com.yiji.adk.rules.drools.CurrentRuleInfoHolder.set(currentRelatedRuleInfo);");
+				"new com.global.adk.rules.drools.CurrentRelatedRuleInfo($rule.getIdentity(),$rule.getRuleName(),$rule.getDescription(),com.alibaba.fastjson.JSON.toJSONString($rule.getRelatedContext())); ")
+			.append("com.global.adk.rules.drools.CurrentRuleInfoHolder.set(currentRelatedRuleInfo);");
 		
 		return script.toString();
 	}

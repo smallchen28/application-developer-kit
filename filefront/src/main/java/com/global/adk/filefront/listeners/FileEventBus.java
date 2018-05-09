@@ -11,8 +11,8 @@
 package com.global.adk.filefront.listeners;
 
 import com.global.adk.event.NotifierBus;
-import com.global.common.log.Logger;
-import com.global.common.log.LoggerFactory;
+import com.yjf.common.log.Logger;
+import com.yjf.common.log.LoggerFactory;
 
 /**
  * @author karott

@@ -10,7 +10,7 @@
  */
 package com.global.adk.filefront.dal.entity;
 
-import com.global.common.util.ToString;
+import com.yjf.common.util.ToString;
 
 /**
  * @author karott

@@ -187,7 +187,7 @@ public class Compiler {
 	public static <T> String genClassNameWithPath(Class<T> supperClass, String path) {
 		
 		StringBuilder className = new StringBuilder();
-		className.append(null != path ? path : "com.yiji.adk.compiler.").append(PROXY_PREFIX)
+		className.append(null != path ? path : "com.global.adk.compiler.").append(PROXY_PREFIX)
 			.append(supperClass.getSimpleName()).append(counter());
 		return className.toString();
 	}

@@ -20,7 +20,7 @@ import com.global.adk.filefront.support.client.FileClientFactory;
 import com.global.adk.filefront.support.function.ConvertFunction;
 import com.global.adk.filefront.support.function.FunctionParser;
 import com.global.boot.core.YijiBootApplication;
-import com.global.common.lang.result.Status;
+import com.yjf.common.lang.result.Status;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

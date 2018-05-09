@@ -12,7 +12,7 @@ import com.global.adk.common.exception.IllegalParameterException;
 import com.global.adk.common.exception.NestError;
 import com.global.adk.common.exception.SystemException;
 import com.global.adk.event.Subscribe;
-import com.global.common.service.Validatable;
+import com.yjf.common.service.Validatable;
 
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;

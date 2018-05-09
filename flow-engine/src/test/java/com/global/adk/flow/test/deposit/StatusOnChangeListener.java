@@ -27,7 +27,7 @@ package com.global.adk.flow.test.deposit;
 
 import com.global.adk.flow.annotation.Listen;
 import com.global.adk.flow.engine.Execution;
-import com.global.common.lang.result.Status;
+import com.yjf.common.lang.result.Status;
 import org.springframework.stereotype.Component;
 
 /**

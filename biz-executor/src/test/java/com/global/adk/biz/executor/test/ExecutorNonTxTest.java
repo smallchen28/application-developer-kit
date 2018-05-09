@@ -35,9 +35,9 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.global.adk.biz.executor.ActivityExecutorContainer;
 import com.global.adk.common.exception.DomainException;
-import com.global.common.lang.context.OperationContext;
-import com.global.common.lang.context.OperationContext.BusinessTypeEnum;
-import com.global.common.lang.context.OperationContext.OperationTypeEnum;
+import com.yjf.common.lang.context.OperationContext;
+import com.yjf.common.lang.context.OperationContext.BusinessTypeEnum;
+import com.yjf.common.lang.context.OperationContext.OperationTypeEnum;
 
 /**
  * 同步、异步、串行、事务

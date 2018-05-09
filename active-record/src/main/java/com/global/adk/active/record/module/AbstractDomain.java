@@ -1,7 +1,7 @@
 package com.global.adk.active.record.module;
 
 import com.global.adk.event.NotifierBus;
-import com.global.common.lang.beans.Copier;
+import com.yjf.common.lang.beans.Copier;
 
 /**
  *

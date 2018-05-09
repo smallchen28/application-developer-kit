@@ -15,7 +15,7 @@ import org.springframework.jdbc.support.incrementer.OracleSequenceMaxValueIncrem
 import com.global.adk.common.exception.PlanTaskException;
 import com.global.adk.common.jdbc.AbstractRepositoryFactoryBean;
 import com.global.adk.plan.task.statement.ActionStatement;
-import com.global.common.concurrent.MonitoredThreadPool;
+import com.yjf.common.concurrent.MonitoredThreadPool;
 
 import javax.sql.DataSource;
 

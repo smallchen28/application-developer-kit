@@ -3,7 +3,7 @@
  */
 package com.global.adk.api;
 
-import com.global.common.lang.result.StandardResultInfo;
+import com.yjf.common.lang.result.StandardResultInfo;
 
 /**
  * @author Administrator

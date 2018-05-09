@@ -11,7 +11,7 @@ import org.springframework.beans.factory.InitializingBean;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 
-import com.global.common.util.StringUtils;
+import com.yjf.common.util.StringUtils;
 
 /**
  *

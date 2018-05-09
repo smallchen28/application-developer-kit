@@ -39,7 +39,7 @@ import com.global.adk.active.record.DomainFactory;
 import com.global.adk.biz.executor.InvokeServiceAdapter;
 import com.global.adk.biz.executor.ServiceContext;
 import com.global.adk.biz.executor.annotation.Invoke;
-import com.global.common.lang.beans.Copier;
+import com.yjf.common.lang.beans.Copier;
 
 @Invoke(entityType = CustomerOrder.class, serviceName = "not_rollback_test", validateGroup = { Default.class })
 public class TxNotRollbackInvokeService extends InvokeServiceAdapter<Order, OrderResult> {

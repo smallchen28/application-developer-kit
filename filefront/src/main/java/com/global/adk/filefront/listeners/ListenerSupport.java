@@ -12,8 +12,8 @@ package com.global.adk.filefront.listeners;
 
 import com.global.adk.filefront.dal.mapper.FileDbOperator;
 import com.global.adk.filefront.schedule.task.FileTaskExecutor;
-import com.global.common.log.Logger;
-import com.global.common.log.LoggerFactory;
+import com.yjf.common.log.Logger;
+import com.yjf.common.log.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
 /**

@@ -41,7 +41,7 @@ public class ErrorMonitor {
 	
 	@Override
 	public String toString() {
-		final StringBuilder sb = new StringBuilder("com.yiji.adk.flow.module.ErrorMonitor{");
+		final StringBuilder sb = new StringBuilder("com.global.adk.flow.module.ErrorMonitor{");
 		sb.append("errorMonitorClass='").append(errorMonitorClass).append('\'');
 		sb.append(", exceptionMapping=").append(exceptionMapping);
 		sb.append('}');

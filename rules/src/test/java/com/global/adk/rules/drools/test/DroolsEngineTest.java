@@ -34,7 +34,7 @@ import com.global.adk.rules.drools.EventRequest;
 import com.global.adk.rules.drools.module.Description;
 import com.global.adk.rules.drools.module.InternalRuleEvent;
 import com.global.adk.rules.drools.module.RelatedRule;
-import com.global.common.lang.util.money.Money;
+import com.yjf.common.lang.util.money.Money;
 import org.drools.runtime.StatelessKnowledgeSession;
 import org.junit.Assert;
 import org.junit.Test;

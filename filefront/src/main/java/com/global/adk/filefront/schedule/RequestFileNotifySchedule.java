@@ -16,7 +16,7 @@ import com.global.adk.filefront.listeners.events.RequestFileNotifyDownloadedEven
 import com.global.adk.filefront.listeners.events.inner.FileNotifyEvent;
 import com.global.adk.filefront.listeners.events.inner.RequestFileNotifyInitedEvent;
 import com.global.adk.filefront.support.consts.StatusConsts;
-import com.global.common.lang.beans.Copier;
+import com.yjf.common.lang.beans.Copier;
 import com.yjf.scheduler.service.api.ScheduleCallBackService;
 
 import java.util.List;

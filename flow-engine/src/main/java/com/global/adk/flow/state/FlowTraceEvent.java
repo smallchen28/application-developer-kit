@@ -12,8 +12,8 @@
 package com.global.adk.flow.state;
 
 import com.google.common.collect.Maps;
-import com.global.common.id.GID;
-import com.global.common.util.ToString;
+import com.yjf.common.id.GID;
+import com.yjf.common.util.ToString;
 
 import java.util.Date;
 import java.util.Map;

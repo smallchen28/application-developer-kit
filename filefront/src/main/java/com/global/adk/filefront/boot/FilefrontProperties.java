@@ -20,7 +20,7 @@ import com.global.adk.filefront.support.client.FileClientFactory;
 import com.global.adk.filefront.support.client.FtpEntry;
 import com.global.boot.core.AppConfigException;
 import com.global.boot.core.Apps;
-import com.global.common.util.StringUtils;
+import com.yjf.common.util.StringUtils;
 
 /**
  * @author karott

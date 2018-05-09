@@ -29,7 +29,7 @@
  */
 package com.global.adk.flow.test.fastpay;
 
-import com.global.common.lang.result.Status;
+import com.yjf.common.lang.result.Status;
 
 /**
  * @author hasulee

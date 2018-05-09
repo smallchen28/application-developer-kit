@@ -5,7 +5,7 @@
 package com.global.adk.biz.executor;
 
 import com.global.adk.common.exception.InitializerException;
-import com.global.common.lang.result.StandardResultInfo;
+import com.yjf.common.lang.result.StandardResultInfo;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;

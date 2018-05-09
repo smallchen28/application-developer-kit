@@ -20,10 +20,10 @@ import com.global.adk.flow.state.FlowHistoryTrace;
 import com.global.adk.flow.state.FlowHistoryTraceRepository;
 import com.global.adk.flow.state.FlowTrace;
 import com.global.adk.flow.state.FlowTraceRepository;
-import com.global.common.id.GID;
-import com.global.common.lang.beans.Copier;
-import com.global.common.log.Logger;
-import com.global.common.log.LoggerFactory;
+import com.yjf.common.id.GID;
+import com.yjf.common.lang.beans.Copier;
+import com.yjf.common.log.Logger;
+import com.yjf.common.log.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.Date;

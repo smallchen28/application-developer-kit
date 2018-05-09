@@ -11,7 +11,7 @@
 package com.global.adk.biz.executor.test;
 
 import com.global.adk.api.annotation.DubboServiceAPI;
-import com.global.common.lang.context.OperationContext;
+import com.yjf.common.lang.context.OperationContext;
 
 /**
  * @author karott (e-mail:chenlin@yiji.com)

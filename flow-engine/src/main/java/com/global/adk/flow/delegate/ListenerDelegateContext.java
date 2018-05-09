@@ -13,7 +13,7 @@ import com.global.adk.flow.annotation.Listen;
 import com.global.adk.flow.engine.Execution;
 import com.global.adk.flow.module.EventListener;
 import com.global.adk.flow.module.Flow;
-import com.global.common.util.StringUtils;
+import com.yjf.common.util.StringUtils;
 import javassist.CtClass;
 import org.springframework.aop.framework.Advised;
 import org.springframework.aop.support.AopUtils;

@@ -33,8 +33,8 @@ import com.global.adk.flow.annotation.Before;
 import com.global.adk.flow.engine.Execution;
 import org.springframework.stereotype.Component;
 
-import com.global.common.log.Logger;
-import com.global.common.log.LoggerFactory;
+import com.yjf.common.log.Logger;
+import com.yjf.common.log.LoggerFactory;
 
 /**
  * @author hasulee

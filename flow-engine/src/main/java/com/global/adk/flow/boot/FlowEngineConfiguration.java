@@ -34,7 +34,7 @@ import com.global.adk.flow.state.FlowTraceRepository;
 import com.global.adk.flow.state.retry.RetryFlowProvider;
 import com.global.adk.flow.state.retry.RetryTransitionListener;
 import com.global.adk.flow.state.retry.TxWrapper;
-import com.global.common.spring.ApplicationContextHolder;
+import com.yjf.common.spring.ApplicationContextHolder;
 import com.yjf.scheduler.service.api.ScheduleCallBackService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;

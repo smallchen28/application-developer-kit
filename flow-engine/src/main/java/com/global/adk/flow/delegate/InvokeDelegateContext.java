@@ -8,7 +8,7 @@ import com.google.common.collect.Maps;
 import com.global.adk.common.exception.FlowException;
 import com.global.adk.flow.engine.Execution;
 import com.global.adk.flow.module.Flow;
-import com.global.common.util.StringUtils;
+import com.yjf.common.util.StringUtils;
 import org.springframework.aop.framework.Advised;
 import org.springframework.aop.support.AopUtils;
 import org.springframework.context.ApplicationContext;

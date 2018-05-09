@@ -26,7 +26,7 @@ import com.global.adk.filefront.schedule.task.FileTaskExecutor;
 import com.global.adk.filefront.support.config.FileConfigParser;
 import com.global.adk.filefront.support.function.FunctionFactory;
 import com.global.adk.filefront.support.transaction.FileTransactionManager;
-import com.global.common.spring.ApplicationContextHolder;
+import com.yjf.common.spring.ApplicationContextHolder;
 import com.yjf.scheduler.service.api.ScheduleCallBackService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;

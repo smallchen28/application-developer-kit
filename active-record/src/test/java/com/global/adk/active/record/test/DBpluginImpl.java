@@ -27,7 +27,7 @@ package com.global.adk.active.record.test;
 
 import com.global.adk.active.record.module.DBPlugin;
 import com.global.adk.common.exception.DomainException;
-import com.global.common.util.StringUtils;
+import com.yjf.common.util.StringUtils;
 import org.mybatis.spring.SqlSessionTemplate;
 
 import java.sql.Timestamp;

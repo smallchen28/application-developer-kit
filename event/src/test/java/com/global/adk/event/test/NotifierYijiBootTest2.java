@@ -25,7 +25,7 @@
 
 package com.global.adk.event.test;
 
-import com.global.common.concurrent.MonitoredThreadPool;
+import com.yjf.common.concurrent.MonitoredThreadPool;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;

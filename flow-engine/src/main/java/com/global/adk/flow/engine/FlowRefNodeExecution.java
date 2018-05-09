@@ -76,7 +76,7 @@ public class FlowRefNodeExecution implements NodeExecution {
 	@Override
 	public String toString() {
 		final StringBuilder sb = new StringBuilder(
-			"com.yiji.adk.flow.engine.FlowRefNodeExecution{");
+			"com.global.adk.flow.engine.FlowRefNodeExecution{");
 		sb.append("decision='").append(decision()).append('\'');
 		sb.append(", endTime=").append(getEndTime());
 		sb.append(", error=").append(getError());

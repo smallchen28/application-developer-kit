@@ -14,7 +14,7 @@ import com.global.adk.filefront.support.consts.InvokeConsts;
 import com.global.adk.api.order.FileNotifyOrder;
 import com.global.adk.api.result.FileNotifyResult;
 import com.global.adk.api.service.FileNotifyService;
-import com.global.common.lang.context.OperationContext;
+import com.yjf.common.lang.context.OperationContext;
 
 /**
  * @author karott

@@ -26,7 +26,7 @@ public class StandardActivityNode extends ActivityNode {
 	
 	@Override
 	public String toString() {
-		final StringBuilder sb = new StringBuilder("com.yiji.adk.flow.module.StandardActivityNode{");
+		final StringBuilder sb = new StringBuilder("com.global.adk.flow.module.StandardActivityNode{");
 		sb.append("name=").append(getName());
 		sb.append(", stateNodeType='").append(nodeType);
 		sb.append(", triggerClass='").append(getTriggerClass());

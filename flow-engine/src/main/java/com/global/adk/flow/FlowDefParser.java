@@ -7,7 +7,7 @@ package com.global.adk.flow;
 import com.global.adk.common.exception.FlowException;
 import com.global.adk.flow.module.*;
 import com.global.adk.flow.state.retry.RetryFailTypeEnum;
-import com.global.common.util.StringUtils;
+import com.yjf.common.util.StringUtils;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;

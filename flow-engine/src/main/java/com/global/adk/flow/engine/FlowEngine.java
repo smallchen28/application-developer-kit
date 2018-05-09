@@ -10,7 +10,7 @@ import com.global.adk.flow.delegate.InvokeDelegateContext;
 import com.global.adk.flow.delegate.ListenerDelegateContext;
 import com.global.adk.flow.delegate.MvelScriptContext;
 import com.global.adk.flow.module.*;
-import com.global.common.util.StringUtils;
+import com.yjf.common.util.StringUtils;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.context.ApplicationContext;
